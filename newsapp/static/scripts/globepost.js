@@ -111,7 +111,8 @@ $(document).ready(function () {
     ajaxreq();
     var bench = 700;
     var winhoff = window.document.body.offsetHeight;
-    var winh=window.innerHeight
+    var winh = window.innerHeight
+    var mymap=document.getElementById("mymap")
     $(window).scroll(function () {
         winhoff = window.document.body.offsetHeight;
         if ((($(window).scrollTop() + winh + 50) > winhoff) && (limit.end < data.length)) {
@@ -123,8 +124,13 @@ $(document).ready(function () {
             bench = bench + 500;
         }
         //console.log("st ",$(window).scrollTop(),"winhoff ",winhoff);
-
-        
+        var offmap = mymap.offsetTop - window.scrollY;
+        console.log("offmapp..... ",offmap)
+        if ((offmap) < 50) {
+            $("#navigator").css({ "visibility": "hidden" });
+        } else {
+            $("#navigator").css({ "visibility": "visible" });
+        }
 
     });
 
