@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<script src="../static/scripts/jquery-1.10.2.js"></script>
+<script src="../static/scripts/bootstrap.js"></script>
+<script src="../static/scripts/jquery.carouFredSel-6.2.1.js"></script>
+<script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.mousewheel.min.js"></script>
+<script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.transit.min.js"></script>
+
+<link href="../static/content/bootstrap.css" rel="stylesheet" />
+<style >
+.image_wrapper{
+    padding:15px 0 15px 40px;
+
+}
+.image_wrapper2{
+    padding:15px 0 15px 40px;
+
+}
+.image_wrapper img{
+    width:140px;
+    height:140px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 9px;
+    margin: 7px;
+    display: block;
+    float: left;
+}
+.image_wrapper2 img{
+    width:140px;
+    height:140px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 9px;
+    margin: 7px;
+    display: block;
+    float: left;
+}
+.clearfix{
+    float:none;
+    clear:both;
+}
+.thumbnail{
+    width:160px;
+    height:160px;
+}
+
+</style>
+<script>
+    $(document).ready(function(){
+    
+       
+
+
+        $("#slide_me").carouFredSel({
+           
+            direction: "left",
+            items:5,
+            scroll: {
+                items: 5,
+                
+                duration: 1000,
+                pauseOnHover: true
+               
+            }
+        });
+        $("#slide_me2").carouFredSel({
+           
+            direction: "left",
+            items:5,
+            scroll: {
+                items: 5,
+                
+                duration: 1000,
+                pauseOnHover: true
+               
+            }
+        });
+        var count = 11;
+        var data = []
+
+        var beg=0;var end=10;
+        //$("#me").click(function () {
+        var ajaxreq=function(){
+            $.ajax({
+                url: "/ajax1",
+                dataType:"json",
+                success: function (data1) {
+                    data=data1
+                    //$("#me").html(data[100].fields.content);
+                    //$("#dyna p").each(function (i, e) {
+                    //    $(this).html(data[i].fields.content);
+                    //});
+                    //$.each(data, function (i, e) {
+                    
+                    console.log("Inside ajax...................")
+                    
+                    populate(beg, end);
+                }
+                
+
+            });
+           //console.log("data outside ajax...................");
+           // console.log(data);
+            console.log("Done !!!!")
+            
+        };
+        
+        function populate(beg, end) {
+            console.log("Inside Populate...................")
+            console.log(beg,end);
+            for (var i = beg; i < end; i++) {
+                //if (i == count) return false;
+                $('<div id="dyna"><p></p></div>').appendTo(".container").css({
+                    "border": "solid",
+                    "border-radius": "3px",
+                    "margin": "5px",
+                    "text-align": "center",
+                    "font-weight":"bold",
+                    "border-color": "grey",
+                    "padding-left": "10px",
+                    "color":"#428bca",
+                }).html(data[i].fields.title)
+                    .append($("<p></p>")
+                    .html(data[i].fields.summary)
+                    .css({
+                        "color": "#444",
+                        "text-decoration": "none",
+                        "text-align": "left",
+                    })
+                    );
+
+                
+                
+            };
+                
+        }
+        
+        ajaxreq();
+        var bench=700;
+        $(window).scroll(function () {
+            //if ((window.innerHeight + window.screenY) >= document.body.offsetHeight) {
+            if (($(window).scrollTop() > bench)&& (end<data.length)) {
+                beg = end + 1;
+                end = end + 10;
+                    //populate(beg, end+10);
+                populate(beg, end );
+                console.log("down....................................");
+                bench = bench + 500;
+            }
+            console.log($(window).scrollTop());
+            
+            //}
+            
+        });
+    });
+
+
+</script>
+</head>
+<body>
+    <div class="container" style="width:800px;">
+        <div class="row">
+            <div class="image_wrapper">
+                <div id="slide_me">
+                    <img src="../static/image/Hydrangeas.jpg" />
+                    <img src="../static/image/Jellyfish.jpg" />
+                    <img src="../static/image/Koala.jpg" />
+                    <img src="../static/image/Lighthouse.jpg" />
+                    <img src="../static/image/logo2.png" />
+                    <img src="../static/image/Tulips.jpg" />
+                    <img src="../static/image/Penguins.jpg" />
+                    <img src="../static/image/Hydrangeas.jpg" />
+                    <img src="../static/image/Jellyfish.jpg" />
+                    <img src="../static/image/Koala.jpg" />
+                    <img src="../static/image/Lighthouse.jpg" />
+                    <img src="../static/image/logo2.png" />
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="row">
+            <div class="image_wrapper2">
+                <div id="slide_me2">
+                    <div class="thumbnail">
+                        <img src="../static/image/Hydrangeas.jpg" />
+                    </div>
+                    <div class="thumbnail"><img src="../static/image/Jellyfish.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Koala.jpg" /></div>
+                    <div class="thumbnail"><img src="../static/image/Lighthouse.jpg" /></div>
+                    <div class="thumbnail"><img src="../static/image/logo2.png" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Tulips.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Penguins.jpg" /></div>
+                    <div class="thumbnail"><img src="../static/image/Hydrangeas.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Jellyfish.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Koala.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/Lighthouse.jpg" /></div>
+                   <div class="thumbnail"> <img src="../static/image/logo2.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="row">
+            
+        </div>
+        <blockquote class="b">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+    </div>
+</body>
+</html>

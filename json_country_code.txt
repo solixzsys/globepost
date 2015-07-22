@@ -1,0 +1,2873 @@
+
+                [
+
+            
+				{ 
+                        "model":"newsapp.Country",
+                       
+pk:1,
+fields: {
+country_id: AF,
+country_name: AFGHANISTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:2,
+fields: {
+country_id: AL,
+country_name: ALBANIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:3,
+fields: {
+country_id: DZ,
+country_name: ALGERIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:4,
+fields: {
+country_id: AS,
+country_name: AMERICAN SAMOA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:5,
+fields: {
+country_id: AD,
+country_name: ANDORRA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:6,
+fields: {
+country_id: AO,
+country_name: ANGOLA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:7,
+fields: {
+country_id: AI,
+country_name: ANGUILLA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:8,
+fields: {
+country_id: AQ,
+country_name: ANTARCTICA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:9,
+fields: {
+country_id: AG,
+country_name: ANTIGUA AND BARBUDA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:10,
+fields: {
+country_id: AR,
+country_name: ARGENTINA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:11,
+fields: {
+country_id: AM,
+country_name: ARMENIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:12,
+fields: {
+country_id: AW,
+country_name: ARUBA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:13,
+fields: {
+country_id: AU,
+country_name: AUSTRALIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:14,
+fields: {
+country_id: AT,
+country_name: AUSTRIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:15,
+fields: {
+country_id: AZ,
+country_name: AZERBAIJAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:16,
+fields: {
+country_id: BS,
+country_name: BAHAMAS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:17,
+fields: {
+country_id: BH,
+country_name: BAHRAIN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:18,
+fields: {
+country_id: BD,
+country_name: BANGLADESH,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:19,
+fields: {
+country_id: BB,
+country_name: BARBADOS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:20,
+fields: {
+country_id: BY,
+country_name: BELARUS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:21,
+fields: {
+country_id: BE,
+country_name: BELGIUM,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:22,
+fields: {
+country_id: BZ,
+country_name: BELIZE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:23,
+fields: {
+country_id: BJ,
+country_name: BENIN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:24,
+fields: {
+country_id: BM,
+country_name: BERMUDA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:25,
+fields: {
+country_id: BT,
+country_name: BHUTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:26,
+fields: {
+country_id: BO,
+country_name: BOLIVIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:27,
+fields: {
+country_id: BA,
+country_name: BOSNIA AND HERZEGOWINA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:28,
+fields: {
+country_id: BW,
+country_name: BOTSWANA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:29,
+fields: {
+country_id: BV,
+country_name: BOUVET ISLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:30,
+fields: {
+country_id: BR,
+country_name: BRAZIL,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:31,
+fields: {
+country_id: IO,
+country_name: BRITISH INDIAN OCEAN TERRITORY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:32,
+fields: {
+country_id: BN,
+country_name: BRUNEI DARUSSALAM,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:33,
+fields: {
+country_id: BG,
+country_name: BULGARIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:34,
+fields: {
+country_id: BF,
+country_name: BURKINA FASO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:35,
+fields: {
+country_id: BI,
+country_name: BURUNDI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:36,
+fields: {
+country_id: KH,
+country_name: CAMBODIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:37,
+fields: {
+country_id: CM,
+country_name: CAMEROON,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:38,
+fields: {
+country_id: CA,
+country_name: CANADA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:39,
+fields: {
+country_id: CV,
+country_name: CAPE VERDE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:40,
+fields: {
+country_id: KY,
+country_name: CAYMAN ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:41,
+fields: {
+country_id: CF,
+country_name: CENTRAL AFRICAN REPUBLIC,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:42,
+fields: {
+country_id: TD,
+country_name: CHAD,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:43,
+fields: {
+country_id: CL,
+country_name: CHILE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:44,
+fields: {
+country_id: CN,
+country_name: CHINA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:45,
+fields: {
+country_id: CX,
+country_name: CHRISTMAS ISLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:46,
+fields: {
+country_id: CC,
+country_name: COCOS (KEELING) ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:47,
+fields: {
+country_id: CO,
+country_name: COLOMBIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:48,
+fields: {
+country_id: KM,
+country_name: COMOROS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:49,
+fields: {
+country_id: CG,
+country_name: CONGO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:50,
+fields: {
+country_id: CD,
+country_name: CONGO, THE DEMOCRATIC REPUBLIC OF THE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:51,
+fields: {
+country_id: CK,
+country_name: COOK ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:52,
+fields: {
+country_id: CR,
+country_name: COSTA RICA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:53,
+fields: {
+country_id: CI,
+country_name: COTE D'IVOIRE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:54,
+fields: {
+country_id: HR,
+country_name: CROATIA (local name: Hrvatska),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:55,
+fields: {
+country_id: CU,
+country_name: CUBA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:56,
+fields: {
+country_id: CY,
+country_name: CYPRUS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:57,
+fields: {
+country_id: CZ,
+country_name: CZECH REPUBLIC,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:58,
+fields: {
+country_id: DK,
+country_name: DENMARK,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:59,
+fields: {
+country_id: DJ,
+country_name: DJIBOUTI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:60,
+fields: {
+country_id: DM,
+country_name: DOMINICA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:61,
+fields: {
+country_id: DO,
+country_name: DOMINICAN REPUBLIC,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:62,
+fields: {
+country_id: TP,
+country_name: EAST TIMOR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:63,
+fields: {
+country_id: EC,
+country_name: ECUADOR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:64,
+fields: {
+country_id: EG,
+country_name: EGYPT,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:65,
+fields: {
+country_id: SV,
+country_name: EL SALVADOR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:66,
+fields: {
+country_id: GQ,
+country_name: EQUATORIAL GUINEA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:67,
+fields: {
+country_id: ER	ERI,
+country_name: ERITREA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:68,
+fields: {
+country_id: EE,
+country_name: ESTONIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:69,
+fields: {
+country_id: ET,
+country_name: ETHIOPIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:70,
+fields: {
+country_id: FK,
+country_name: FALKLAND ISLANDS (MALVINAS),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:71,
+fields: {
+country_id: FO,
+country_name: FAROE ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:72,
+fields: {
+country_id: FJ,
+country_name: FIJI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:73,
+fields: {
+country_id: FI,
+country_name: FINLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:74,
+fields: {
+country_id: FR,
+country_name: FRANCE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:75,
+fields: {
+country_id: FX,
+country_name: FRANCE, METROPOLITAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:76,
+fields: {
+country_id: GF,
+country_name: FRENCH GUIANA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:77,
+fields: {
+country_id: PF,
+country_name: FRENCH POLYNESIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:78,
+fields: {
+country_id: TF,
+country_name: FRENCH SOUTHERN TERRITORIES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:79,
+fields: {
+country_id: GA,
+country_name: GABON,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:80,
+fields: {
+country_id: GM,
+country_name: GAMBIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:81,
+fields: {
+country_id: GE,
+country_name: GEORGIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:82,
+fields: {
+country_id: DE,
+country_name: GERMANY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:83,
+fields: {
+country_id: GH,
+country_name: GHANA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:84,
+fields: {
+country_id: GI,
+country_name: GIBRALTAR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:85,
+fields: {
+country_id: GR,
+country_name: GREECE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:86,
+fields: {
+country_id: GL,
+country_name: GREENLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:87,
+fields: {
+country_id: GD,
+country_name: GRENADA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:88,
+fields: {
+country_id: GP,
+country_name: GUADELOUPE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:89,
+fields: {
+country_id: GU,
+country_name: GUAM,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:90,
+fields: {
+country_id: GT,
+country_name: GUATEMALA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:91,
+fields: {
+country_id: GN,
+country_name: GUINEA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:92,
+fields: {
+country_id: GW,
+country_name: GUINEA-BISSAU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:93,
+fields: {
+country_id: GY,
+country_name: GUYANA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:94,
+fields: {
+country_id: HT,
+country_name: HAITI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:95,
+fields: {
+country_id: HM,
+country_name: HEARD AND MC DONALD ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:96,
+fields: {
+country_id: VA,
+country_name: HOLY SEE (VATICAN CITY STATE),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:97,
+fields: {
+country_id: HN,
+country_name: HONDURAS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:98,
+fields: {
+country_id: HK,
+country_name: HONG KONG,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:99,
+fields: {
+country_id: HU,
+country_name: HUNGARY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:100,
+fields: {
+country_id: IS,
+country_name: ICELAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:101,
+fields: {
+country_id: IN,
+country_name: INDIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:102,
+fields: {
+country_id: ID,
+country_name: INDONESIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:103,
+fields: {
+country_id: IR,
+country_name: IRAN (ISLAMIC REPUBLIC OF),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:104,
+fields: {
+country_id: IQ,
+country_name: IRAQ,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:105,
+fields: {
+country_id: IE,
+country_name: IRELAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:106,
+fields: {
+country_id: IL,
+country_name: ISRAEL,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:107,
+fields: {
+country_id: IT,
+country_name: ITALY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:108,
+fields: {
+country_id: JM,
+country_name: JAMAICA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:109,
+fields: {
+country_id: JP,
+country_name: JAPAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:110,
+fields: {
+country_id: JO,
+country_name: JORDAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:111,
+fields: {
+country_id: KZ,
+country_name: KAZAKHSTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:112,
+fields: {
+country_id: KE,
+country_name: KENYA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:113,
+fields: {
+country_id: KI,
+country_name: KIRIBATI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:114,
+fields: {
+country_id: KP,
+country_name: KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:115,
+fields: {
+country_id: KR,
+country_name: KOREA, REPUBLIC OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:116,
+fields: {
+country_id: KW,
+country_name: KUWAIT,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:117,
+fields: {
+country_id: KG,
+country_name: KYRGYZSTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:118,
+fields: {
+country_id: LA,
+country_name: LAO PEOPLE'S DEMOCRATIC REPUBLIC,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:119,
+fields: {
+country_id: LV,
+country_name: LATVIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:120,
+fields: {
+country_id: LB,
+country_name: LEBANON,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:121,
+fields: {
+country_id: LS,
+country_name: LESOTHO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:122,
+fields: {
+country_id: LR,
+country_name: LIBERIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:123,
+fields: {
+country_id: LY,
+country_name: LIBYAN ARAB JAMAHIRIYA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:124,
+fields: {
+country_id: LI,
+country_name: LIECHTENSTEIN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:125,
+fields: {
+country_id: LT,
+country_name: LITHUANIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:126,
+fields: {
+country_id: LU,
+country_name: LUXEMBOURG,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:127,
+fields: {
+country_id: MO,
+country_name: MACAU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:128,
+fields: {
+country_id: MK,
+country_name: MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:129,
+fields: {
+country_id: MG,
+country_name: MADAGASCAR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:130,
+fields: {
+country_id: MW,
+country_name: MALAWI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:131,
+fields: {
+country_id: MY,
+country_name: MALAYSIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:132,
+fields: {
+country_id: MV,
+country_name: MALDIVES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:133,
+fields: {
+country_id: ML,
+country_name: MALI,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:134,
+fields: {
+country_id: MT,
+country_name: MALTA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:135,
+fields: {
+country_id: MH,
+country_name: MARSHALL ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:136,
+fields: {
+country_id: MQ,
+country_name: MARTINIQUE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:137,
+fields: {
+country_id: MR,
+country_name: MAURITANIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:138,
+fields: {
+country_id: MU,
+country_name: MAURITIUS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:139,
+fields: {
+country_id: YT,
+country_name: MAYOTTE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:140,
+fields: {
+country_id: MX,
+country_name: MEXICO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:141,
+fields: {
+country_id: FM,
+country_name: MICRONESIA, FEDERATED STATES OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:142,
+fields: {
+country_id: MD,
+country_name: MOLDOVA, REPUBLIC OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:143,
+fields: {
+country_id: MC,
+country_name: MONACO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:144,
+fields: {
+country_id: MN,
+country_name: MONGOLIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:145,
+fields: {
+country_id: MS,
+country_name: MONTSERRAT,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:146,
+fields: {
+country_id: MA,
+country_name: MOROCCO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:147,
+fields: {
+country_id: MZ,
+country_name: MOZAMBIQUE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:148,
+fields: {
+country_id: MM,
+country_name: MYANMAR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:149,
+fields: {
+country_id: NA,
+country_name: NAMIBIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:150,
+fields: {
+country_id: NR,
+country_name: NAURU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:151,
+fields: {
+country_id: NP,
+country_name: NEPAL,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:152,
+fields: {
+country_id: NL,
+country_name: NETHERLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:153,
+fields: {
+country_id: AN,
+country_name: NETHERLANDS ANTILLES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:154,
+fields: {
+country_id: NC,
+country_name: NEW CALEDONIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:155,
+fields: {
+country_id: NZ,
+country_name: NEW ZEALAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:156,
+fields: {
+country_id: NI,
+country_name: NICARAGUA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:157,
+fields: {
+country_id: NE,
+country_name: NIGER,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:158,
+fields: {
+country_id: NG,
+country_name: NIGERIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:159,
+fields: {
+country_id: NU,
+country_name: NIUE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:160,
+fields: {
+country_id: NF,
+country_name: NORFOLK ISLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:161,
+fields: {
+country_id: MP,
+country_name: NORTHERN MARIANA ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:162,
+fields: {
+country_id: NO,
+country_name: NORWAY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:163,
+fields: {
+country_id: OM,
+country_name: OMAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:164,
+fields: {
+country_id: PK,
+country_name: PAKISTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:165,
+fields: {
+country_id: PW,
+country_name: PALAU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:166,
+fields: {
+country_id: PA,
+country_name: PANAMA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:167,
+fields: {
+country_id: PG,
+country_name: PAPUA NEW GUINEA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:168,
+fields: {
+country_id: PY,
+country_name: PARAGUAY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:169,
+fields: {
+country_id: PE,
+country_name: PERU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:170,
+fields: {
+country_id: PH,
+country_name: PHILIPPINES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:171,
+fields: {
+country_id: PN,
+country_name: PITCAIRN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:172,
+fields: {
+country_id: PL,
+country_name: POLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:173,
+fields: {
+country_id: PT,
+country_name: PORTUGAL,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:174,
+fields: {
+country_id: PR,
+country_name: PUERTO RICO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:175,
+fields: {
+country_id: QA,
+country_name: QATAR,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:176,
+fields: {
+country_id: RE,
+country_name: REUNION,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:177,
+fields: {
+country_id: RO,
+country_name: ROMANIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:178,
+fields: {
+country_id: RU,
+country_name: RUSSIAN FEDERATION,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:179,
+fields: {
+country_id: RW,
+country_name: RWANDA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:180,
+fields: {
+country_id: KN,
+country_name: SAINT KITTS AND NEVIS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:181,
+fields: {
+country_id: LC,
+country_name: SAINT LUCIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:182,
+fields: {
+country_id: VC,
+country_name: SAINT VINCENT AND THE GRENADINES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:183,
+fields: {
+country_id: WS,
+country_name: SAMOA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:184,
+fields: {
+country_id: SM,
+country_name: SAN MARINO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:185,
+fields: {
+country_id: ST,
+country_name: SAO TOME AND PRINCIPE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:186,
+fields: {
+country_id: SA,
+country_name: SAUDI ARABIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:187,
+fields: {
+country_id: SN,
+country_name: SENEGAL,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:188,
+fields: {
+country_id: SC,
+country_name: SEYCHELLES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:189,
+fields: {
+country_id: SL,
+country_name: SIERRA LEONE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:190,
+fields: {
+country_id: SG,
+country_name: SINGAPORE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:191,
+fields: {
+country_id: SK,
+country_name: SLOVAKIA (Slovak Republic),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:192,
+fields: {
+country_id: SI,
+country_name: SLOVENIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:193,
+fields: {
+country_id: SB,
+country_name: SOLOMON ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:194,
+fields: {
+country_id: SO,
+country_name: SOMALIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:195,
+fields: {
+country_id: ZA,
+country_name: SOUTH AFRICA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:196,
+fields: {
+country_id: GS,
+country_name: SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:197,
+fields: {
+country_id: ES,
+country_name: SPAIN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:198,
+fields: {
+country_id: LK,
+country_name: SRI LANKA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:199,
+fields: {
+country_id: SH,
+country_name: ST. HELENA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:200,
+fields: {
+country_id: PM,
+country_name: ST. PIERRE AND MIQUELON,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:201,
+fields: {
+country_id: SD,
+country_name: SUDAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:202,
+fields: {
+country_id: SR,
+country_name: SURINAME,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:203,
+fields: {
+country_id: SJ,
+country_name: SVALBARD AND JAN MAYEN ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:204,
+fields: {
+country_id: SZ,
+country_name: SWAZILAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:205,
+fields: {
+country_id: SE,
+country_name: SWEDEN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:206,
+fields: {
+country_id: CH,
+country_name: SWITZERLAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:207,
+fields: {
+country_id: SY,
+country_name: SYRIAN ARAB REPUBLIC,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:208,
+fields: {
+country_id: TW,
+country_name: TAIWAN, PROVINCE OF CHINA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:209,
+fields: {
+country_id: TJ,
+country_name: TAJIKISTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:210,
+fields: {
+country_id: TZ,
+country_name: TANZANIA, UNITED REPUBLIC OF,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:211,
+fields: {
+country_id: TH,
+country_name: THAILAND,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:212,
+fields: {
+country_id: TG,
+country_name: TOGO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:213,
+fields: {
+country_id: TK,
+country_name: TOKELAU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:214,
+fields: {
+country_id: TO,
+country_name: TONGA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:215,
+fields: {
+country_id: TT,
+country_name: TRINIDAD AND TOBAGO,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:216,
+fields: {
+country_id: TN,
+country_name: TUNISIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:217,
+fields: {
+country_id: TR,
+country_name: TURKEY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:218,
+fields: {
+country_id: TM,
+country_name: TURKMENISTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:219,
+fields: {
+country_id: TC,
+country_name: TURKS AND CAICOS ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:220,
+fields: {
+country_id: TV,
+country_name: TUVALU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:221,
+fields: {
+country_id: UG,
+country_name: UGANDA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:222,
+fields: {
+country_id: UA,
+country_name: UKRAINE,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:223,
+fields: {
+country_id: AE,
+country_name: UNITED ARAB EMIRATES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:224,
+fields: {
+country_id: GB,
+country_name: UNITED KINGDOM,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:225,
+fields: {
+country_id: US,
+country_name: UNITED STATES,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:226,
+fields: {
+country_id: UM,
+country_name: UNITED STATES MINOR OUTLYING ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:227,
+fields: {
+country_id: UY,
+country_name: URUGUAY,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:228,
+fields: {
+country_id: UZ,
+country_name: UZBEKISTAN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:229,
+fields: {
+country_id: VU,
+country_name: VANUATU,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:230,
+fields: {
+country_id: VE,
+country_name: VENEZUELA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:231,
+fields: {
+country_id: VN,
+country_name: VIET NAM,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:232,
+fields: {
+country_id: VG,
+country_name: VIRGIN ISLANDS (BRITISH),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:233,
+fields: {
+country_id: VI,
+country_name: VIRGIN ISLANDS (U.S.),
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:234,
+fields: {
+country_id: WF,
+country_name: WALLIS AND FUTUNA ISLANDS,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:235,
+fields: {
+country_id: EH,
+country_name: WESTERN SAHARA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:236,
+fields: {
+country_id: YE,
+country_name: YEMEN,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:237,
+fields: {
+country_id: YU,
+country_name: YUGOSLAVIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:238,
+fields: {
+country_id: ZM,
+country_name: ZAMBIA,
+
+                        }
+                       }, 
+                      
+
+             { 
+                        "model":"newsapp.Country",
+                       
+pk:239,
+fields: {
+country_id: ZW,
+country_name: ZIMBABWE,
+
+                        }
+                       }, 
+                      
+
+]

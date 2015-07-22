@@ -1,0 +1,8 @@
+punch	http://punchng.com Nigeria
+pm news	http://pmnewsnigeria.com	Nigeria
+bbc	http://bbc.com	Uk
+cnn	http://cnn.com usa
+sky news	http://skynews.com	uk
+Reuters	http://reuters.com	usa
+cbn	http://cbn.com	usa
+yahoo	http://yahoo.com	usa

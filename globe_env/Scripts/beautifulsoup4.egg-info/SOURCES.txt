@@ -1,0 +1,5 @@
+beautifulsoup4.egg-info/PKG-INFO
+beautifulsoup4.egg-info/SOURCES.txt
+beautifulsoup4.egg-info/dependency_links.txt
+beautifulsoup4.egg-info/requires.txt
+beautifulsoup4.egg-info/top_level.txt

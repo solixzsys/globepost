@@ -1,0 +1,26 @@
+{
+    "py/object": "newsapp.models.Post",
+    "py/reduce": [
+        {
+            "py/function": "django.db.models.base.model_unpickle"
+        },
+        {
+            "py/tuple": [
+                {
+                    "py/tuple": [
+                        "newsapp",
+                        "Post"
+                    ]
+                },
+                [
+                ],
+                {
+                    "py/function": "django.db.models.base.simple_class_factory"
+                }
+            ]
+        },
+        {
+            "thumbnail": "http://l.yimg.com/bt/api/res/1.2/lNTZ8r0MQY.SOQ5kSMAIBA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTg2O3E9NzU7dz0xMzA-/http",
+            "_django_version": "1.8.2",
+            "summary": "<p><a href=\\"http
+            : //news.yahoo.com/reports--active-shooter-at-washington-navy-yard-122920374.html\\"><img src=\\"http://l.yimg.com/bt/api/res/1.2/lNTZ8r0MQY.SOQ5kSMAIBA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTg2O3E9NzU7dz0xMzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/60113a99760c0c1d7b0f6a706700b768.jpg\\" width=\\"130\\" height=\\"86\\" alt=\\"FILE - In this Sept. 19, 2013 file photo. military personnel walks past an entrance to the Washington Navy Yard in Washington. An official says shots have been reported in a building on the Washington Navy Yard campus. (AP Photo/Charles Dharapak, File)\\" align=\\"left\\" title=\\"FILE - In this Sept. 19, 2013 file photo. military personnel walks past an entrance to the Washington Navy Yard in Washington. An official says shots have been reported in a building on the Washington Navy Yard campus. (AP Photo/Charles Dharapak, File)\\" border=\\"0\\" /></a>The facility, which was the scene of a deadly shooting in 2013, is on lockdown as authorities investigate.</p><br clear=\\"all\\"/>", "content": "<p><a href=\\"http://news.yahoo.com/reports--active-shooter-at-washington-navy-yard-122920374.html\\"><img src=\\"http://l.yimg.com/bt/api/res/1.2/lNTZ8r0MQY.SOQ5kSMAIBA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTg2O3E9NzU7dz0xMzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/60113a99760c0c1d7b0f6a706700b768.jpg\\" width=\\"130\\" height=\\"86\\" alt=\\"FILE - In this Sept. 19, 2013 file photo. military personnel walks past an entrance to the Washington Navy Yard in Washington. An official says shots have been reported in a building on the Washington Navy Yard campus. (AP Photo/Charles Dharapak, File)\\" align=\\"left\\" title=\\"FILE - In this Sept. 19, 2013 file photo. military personnel walks past an entrance to the Washington Navy Yard in Washington. An official says shots have been reported in a building on the Washington Navy Yard campus. (AP Photo/Charles Dharapak, File)\\" border=\\"0\\" /></a>The facility, which was the scene of a deadly shooting in 2013, is on lockdown as authorities investigate.</p><br clear=\\"all\\"/>", "title": "Police respond to reports of active shooter at D.C. Navy Yard", "_state": {"py/object": "django.db.models.base.ModelState", "db": "default", "adding": false}, "id": 106, "pub_date": {"py/object": "datetime.date", "__reduce__": [{"py/type": "datetime.date"}, ["B98HAg=="]]}, "feed_url_id": 2}, null, null]}

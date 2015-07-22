@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>globepost</Name>
+    <RootNamespace>globepost</RootNamespace>
+    <InterpreterId>{3e0a5015-5586-4a5e-adfa-90d02ed907fe}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8bdb98f3-f5ec-471a-988b-82efa2960e03</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>newsapp\utility_scripts\hunter.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="globepost\__init__.py" />
+    <Compile Include="globepost\settings.py" />
+    <Compile Include="globepost\urls.py" />
+    <Compile Include="globepost\wsgi.py" />
+    <Compile Include="newsapp\admin.py" />
+    <Compile Include="newsapp\forms.py" />
+    <Compile Include="newsapp\models.py" />
+    <Compile Include="newsapp\tests.py" />
+    <Compile Include="newsapp\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newsapp\utility_scripts\hunter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newsapp\utility_scripts\populate_country.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newsapp\utility_scripts\__init__.py" />
+    <Compile Include="newsapp\views.py" />
+    <Compile Include="newsapp\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="globepost\" />
+    <Folder Include="newsapp\" />
+    <Folder Include="newsapp\fixture\" />
+    <Folder Include="newsapp\static\carouFredSel-master\" />
+    <Folder Include="newsapp\static\carouFredSel-master\carouFredSel-master\" />
+    <Folder Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\" />
+    <Folder Include="newsapp\static\image\" />
+    <Folder Include="newsapp\static\scripts\helper-plugins\" />
+    <Folder Include="newsapp\utility_scripts\" />
+    <Folder Include="newsapp\static\" />
+    <Folder Include="newsapp\static\content\" />
+    <Folder Include="newsapp\static\fonts\" />
+    <Folder Include="newsapp\static\scripts\" />
+    <Folder Include="newsapp\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newsapp\fixture\json_country_code.json" />
+    <Content Include="newsapp\fixture\post.json" />
+    <Content Include="newsapp\fixture\post2.json" />
+    <Content Include="newsapp\fixture\TextFile1.txt" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\bower.json" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\changelog.txt" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.mousewheel.min.js" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.touchSwipe.min.js" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.transit.min.js" />
+    <Content Include="newsapp\templates\index1.html" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\jquery.carouFredSel-6.2.1-packed.js" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\jquery.carouFredSel-6.2.1.js" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\license.txt" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\README.md" />
+    <Content Include="newsapp\static\content\bootstrap.css" />
+    <Content Include="newsapp\static\content\bootstrap.min.css" />
+    <Content Include="newsapp\static\content\site.css" />
+    <Content Include="newsapp\static\content\xx.css" />
+    <Content Include="newsapp\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="newsapp\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="newsapp\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="newsapp\static\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="newsapp\static\scripts\_references.js" />
+    <Content Include="newsapp\static\image\Hydrangeas.jpg" />
+    <Content Include="newsapp\static\image\Jellyfish.jpg" />
+    <Content Include="newsapp\static\image\Koala.jpg" />
+    <Content Include="newsapp\static\image\Lighthouse.jpg" />
+    <Content Include="newsapp\static\image\logo2.png" />
+    <Content Include="newsapp\static\image\map.png" />
+    <Content Include="newsapp\static\image\Penguins.jpg" />
+    <Content Include="newsapp\static\image\Tulips.jpg" />
+    <Content Include="newsapp\static\scripts\bootstrap.js" />
+    <Content Include="newsapp\static\scripts\bootstrap.min.js" />
+    <None Include="newsapp\static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="newsapp\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="newsapp\static\scripts\globepost.js" />
+    <Content Include="newsapp\static\scripts\helper-plugins\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="newsapp\static\scripts\helper-plugins\jquery.mousewheel.min.js" />
+    <Content Include="newsapp\static\scripts\helper-plugins\jquery.touchSwipe.min.js" />
+    <Content Include="newsapp\static\scripts\helper-plugins\jquery.transit.min.js" />
+    <Content Include="newsapp\static\scripts\jquery-1.10.2.js" />
+    <Content Include="newsapp\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="newsapp\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="newsapp\static\scripts\jquery.carouFredSel-6.2.1-packed.js" />
+    <Content Include="newsapp\static\scripts\jquery.carouFredSel-6.2.1.js" />
+    <Content Include="newsapp\static\scripts\jquery.validate.js" />
+    <Content Include="newsapp\static\scripts\jquery.validate.min.js" />
+    <Content Include="newsapp\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="newsapp\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="newsapp\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="newsapp\static\scripts\respond.js" />
+    <Content Include="newsapp\static\scripts\respond.min.js" />
+    <Content Include="newsapp\templates\index.html" />
+    <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\index1.html" />
+    <Content Include="newsapp\templates\test1.html" />
+    <Content Include="newsapp\templates\test2.html" />
+    <Content Include="newsapp\templates\xx.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.mht">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="globe_env\">
+      <Id>{3e0a5015-5586-4a5e-adfa-90d02ed907fe}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>globe_env (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

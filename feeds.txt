@@ -1,0 +1,68 @@
+
+Home RSS feeds Digital signage Free images Free account Log in
+RSS news feed list
+ 
+Lists of RSS feeds	Website page
+ 	 
+BBC news feeds list	http://www.bbc.co.uk/news/10628494
+CNN news feeds list	http://edition.cnn.com/services/rss/
+Financial Times feeds list	http://www.ft.com/rss
+Reuters news feed list	
+http://www.reuters.com/tools/rss
+Sky news feed list	http://news.sky.com/info/rss
+Yahoo news feed list	http://news.yahoo.com/sitemap/
+ 
+ 
+Individual news feeds	Feed URL
+ 	 
+World news	 
+ 	 
+BBC world news	http://feeds.bbci.co.uk/news/world/rss.xml
+CBN world news	http://www.cbn.com/cbnnews/world/feed/
+Reuters world news	http://feeds.reuters.com/Reuters/worldNews
+ 	 
+UK news	 
+ 	 
+BBC UK news	http://feeds.bbci.co.uk/news/rss.xml
+Sky UK news	http://news.sky.com/sky-news/rss/home/rss.xml
+ 	 
+US news	 
+ 	 
+CBN US news	http://www.cbn.com/cbnnews/us/feed/
+Reuters US news	http://feeds.reuters.com/Reuters/domesticNews
+Yahoo.com news	http://news.yahoo.com/rss/
+ 	 
+Technology	 
+BBC technology news	http://feeds.bbci.co.uk/news/technology/rss.xml
+ 	 
+Business	 
+ 	 
+BBC business news	http://feeds.bbci.co.uk/news/business/rss.xml
+ 	 
+ 	 
+
+Finding news feeds
+
+Just try a Google search on 'rss feeds', 'your-country news feeds', etc.
+ 
+
+Your suggestions
+
+If you have any suggestions for news feeds that you would like to see listed here, then please email support@repeatsoftware.com.   We would be interested in knowing the best news feeds in the Ireland, the US, Canada, New Zealand, South Africa and Australia to add to this list.
+
+RepeatServer.com
+Login
+Create free account
+RSS feeds
+RSS feed creation
+RSS feed list
+Information
+Training videos
+Digital signage
+Free images
+Repeat Software
+RepeatSoftware.com
+Support 
+News
+ Repeat Software Twitter account      Google Plus  Vimeo     Facebook
+Copyright © 2009-2015 Repeat Software Ltd  

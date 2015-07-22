@@ -1,0 +1,26 @@
+ def createj(p):
+...     post=p
+...     field=["id","url","title","pubDate","summary","content","thumbnail"]
+...     d={}
+...     d[field[0]]=str(p.pk)
+...     d[field[1]]=str(p.feed_url)
+...     d[field[2]]=str(p.title)
+...     d[field[3]]=str(p.pub_date)
+...     d[field[4]]=str(p.summary)
+...     d[field[5]]=str(p.content)
+...     d[field[6]]=str(p.thumbnail)
+...     return d
+
+
+>>> for post in p:
+...     i=i+1
+...     j["post"+str(i)]=createj(post)
+
+
+
+for(var i=0;i<10;i++){
+                        var e=document.createElement("div");
+                        e.html(data[i].fields.content);
+                        var m=document.getElementById("me");
+                        m.appendChild(e)
+                    }
