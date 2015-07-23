@@ -59,7 +59,8 @@ input[type="checkbox"].input-validation-error {
    color: #555555; 
 }
  .breakingnews{
-     background-color:#ffac00;
+     background-color:#ffffff;
+     border:1px solid ;
  }
  .thumb > .thumbnail{
      height:150px;
@@ -129,7 +130,7 @@ input[type="checkbox"].input-validation-error {
 }
 
 #note{
-    color:#FFAC00;
+    color:#ff6a00;
 }
 
 #bs-example-navbar-collapse-1{

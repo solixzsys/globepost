@@ -11,7 +11,7 @@
     <script src="../static/scripts/globepost.js"></script>
     <style>
         .header1{
-            background-color:#00d0ff;
+            background-color:#888;
         }
         .header2{
             background-color:#808080;
@@ -60,17 +60,13 @@
 </head>
 
 <body>
-    <div class="container" style="box-shadow:0 0  5px   #888;">
-        <div class="row">
-            <div class="col-xs-12 visible-xs " style="height:50px; background-color:#00d0ff;">
+    <div class="container" style="box-shadow:0 0  5px   #888;top:300px">
 
-            </div>
-        </div>
         <div class="row menu1" style="background-color:darkblue">
             <div class="logotext col-xs-12- col-sm-12 ">
 
 
-                <nav id="navigator"   class="navbar   navbar-default " role="navigation">
+                <nav id="navigator" class="navbar   navbar-default " role="navigation">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -84,8 +80,8 @@
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav" style=" display:inline; margin-left:auto;margin-right:auto" >
-                                <li ><a  href="#">Weather Report</a></li>
+                            <ul class="nav navbar-nav navbar-right" style="">
+                                <li><a href="#">Weather Report</a></li>
                                 <li><a href="#">Africa</a></li>
                                 <li><a href="#">MiddleEast</a></li>
                                 <li><a href="#">Sport</a></li>
@@ -106,14 +102,14 @@
 
             </div>
         </div>
-        <div class="row header1">
+        <div class="row header1" style="top:100px;margin-top:50px">
 
 
-          
-            
-             <div class="logo col-xs-12    col-md-12 ">
-                            <img src="../static/image/logo2.png" height="100" width="200" />
-                  </div>
+
+
+            <div class="logo col-xs-12    col-md-12 ">
+                <img src="../static/image/logo2.png" height="100" width="200" />
+            </div>
 
 
         </div>
@@ -126,13 +122,13 @@
                     </div>
                 </div>
 
-                
-                <div  class="row">
+
+                <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-10 col-md-pull-1">
                         <div class="imgwrap">
                             <div id="imgslide">
-                                <div class="img_frame" >
+                                <div class="img_frame">
                                     <img src="../static/image/Hydrangeas.jpg" />
                                     <p>News Weather Report Africa NewsEntertainment</p>
                                 </div>
@@ -148,7 +144,7 @@
                                     <img src="../static/image/Lighthouse.jpg" />
                                     <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
                                 </div>
-                                
+
                                 <div class="img_frame">
                                     <img src="../static/image/Penguins.jpg" />
                                     <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
@@ -173,7 +169,7 @@
                                     <img src="../static/image/Lighthouse.jpg" />
                                     <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
                                 </div>
-                               
+
                                 <div class="img_frame">
                                     <img src="../static/image/Penguins.jpg" />
                                     <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
@@ -196,67 +192,68 @@
 
         </div>
         <div class="row map_region" id="mymap">
-            <div  class="col-md-12" style="padding-left:0;padding-right:0; border:none;height:650px;" id="regions_div">
-           <!-- <img src="../static/image/map.png" style="width:100%; height:650px;" />-->
+            <div class="col-md-12" style="padding-left:0;padding-right:0; border:none;height:650px;" id="regions_div">
+                <!-- <img src="../static/image/map.png" style="width:100%; height:650px;" />-->
 
-        </div>
-    </div>
-    <div id="contentarea" class="row content_area">
-        <div class="container">
-            <div class="row">
-                <div id="story" class="col-md-12">
-
-                    <h5 style="font-weight:bold;">Stories >>></h5>
-
-                </div>
             </div>
-            <div class="row">
-                <div id="sidebar" class="col-md-2 " style=" padding:0;  ">
-                    <ul class="list-group" style="padding:0; margin-bottom:0;">
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            World
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            Africa
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            Europe
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            MiddleEast
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            Asia
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            South America
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">14</span>
-                            Austrialia
-                        </li>
-                    </ul>
-                </div>
-                <div id="listcont" class="col-md-10" >
-                    <div id="listing" class="container">
-                       
-                        
+        </div>
+        <div id="contentarea" class="row content_area">
+            <div class="container">
+                <div class="row">
+                    <div id="story" class="col-md-12">
 
+                        <h5 style="font-weight:bold;">Stories >>></h5>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="sidebar" class="col-md-2 " style=" padding:0;  ">
+                        <ul class="list-group" style="padding:0; margin-bottom:0;">
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                World
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                Africa
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                Europe
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                MiddleEast
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                Asia
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                South America
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                Austrialia
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="listcont" class="col-md-10">
+                        <div id="listing" class="container">
+
+
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row footer">
-        footer
-    </div>
+        <div class="row footer">
+            footer
+        </div>
 
-    
+
+        </div>
 </body>
 </html>

@@ -142,6 +142,8 @@
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\index1.html" />
     <Content Include="newsapp\templates\test1.html" />
     <Content Include="newsapp\templates\test2.html" />
+    <Content Include="newsapp\templates\test3 - Copy.html" />
+    <Content Include="newsapp\templates\test3.html" />
     <Content Include="newsapp\templates\xx.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
