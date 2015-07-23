@@ -83,6 +83,11 @@ input[type="checkbox"].input-validation-error {
  .toTop{
      top:0;
      position:fixed;
+     
+     left:0;
+ }
+ #navigator{
+    width:100%;
  }
 
  #slidepics img{
@@ -125,4 +130,8 @@ input[type="checkbox"].input-validation-error {
 
 #note{
     color:#FFAC00;
+}
+
+#bs-example-navbar-collapse-1{
+    margin:auto;
 }

@@ -13,7 +13,7 @@ $(document).ready(function () {
         
    //     if ((l > 80) && (window.outerWidth > 1000)) {
    //         console.log(window.outerWidth)
-            $(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', 'width': '60%' }).addClass("toTop").slideToggle("3000")
+            $(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', }).addClass("toTop").slideToggle("3000")
    //     } else {
    //         $(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent','width':'100%' }).removeClass("toTop").fadeOut(3000)
    //     }
