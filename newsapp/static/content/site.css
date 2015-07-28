@@ -1,7 +1,6 @@
 ﻿body {
-    padding-top: 0;
+    padding-top: 50px;
     padding-bottom: 20px;
-    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -42,97 +41,28 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-.navbar-default {
-  background-color:transparent;
-  border-color: transparent;
-  width:60%;
-  /*margin-top:20px;
-  margin-left:20px;*/
+/*########################################################################################*/
 
-}
- .navbar-brand, .navbar-nav li {      
-    font-weight:bolder;
-}
-
- .navbar-default .navbar-brand,
- .navbar-default .navbar-nav > li > a  {
-   color: #555555; 
-}
- .breakingnews{
-     background-color:#ffffff;
-     border:1px solid ;
- }
- .thumb > .thumbnail{
-     height:150px;
-     width:210px;
-     max-width:100%;
-     padding-right:5px;
+#roll_it img{
+   border: 1px solid #ccc;
+	background-color: white;
+	padding: 9px;
+	margin: 7px;
+    width:200px;
     
-     
- }
- 
-
- .thumb {
-     /*padding-left:0;
-     padding-right:0;*/
-     padding:5px;
-     /*width:100%;
-     height:100px;*/
- }
-
-
- .toTop{
-     top:0;
-     position:fixed;
-     
-     left:0;
- }
- #navigator{
-    width:100%;
- }
-
- #slidepics img{
-     /*width:200px;
-     heig*/ht:150px;
- }
-
- #imgslide{
-     width:100%;
-     border-color:yellow;
- }
-   #imgslide img{
-            width:140px;
-            /*margin:10px;*/
-            margin-right:5px;
-            height:80px;
-        }
-    #imgslide .img_frame p{
-            color:#191921;
-        }
-#imgslide .img_frame{
-    width: 150px;
-    /*height: 90%;*/
-    float: left;
-    margin:10px;
-    /*padding:5px;*/
-    
-    display: inline-block;
-  display: block;
-  /*height: auto;*/
-  max-width: 100%;
-  padding: 4px;
-  line-height: 1.428571429;
-  background-color: #ffffff;
-  /*border: 1px solid #cccccc;*/
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+}
+#roll_it{
+    margin: 20px 0;
+	width: 100%;
+    padding:0;
+    overflow-y:hidden;
+    /*width:100%;*/
 }
 
-#note{
-    color:#ff6a00;
+.caroufredsel_wrapper {
+    /*width:500px;*/
 }
 
-#bs-example-navbar-collapse-1{
-    margin:auto;
+#slide_wrap{
+    /*height:200px;*/
 }

@@ -12,6 +12,8 @@ def test1(request):
     return render(request,'test1.html',{})
 def test2(request):
     return render(request,'test2.html',{})
+def test4(request):
+    return render(request,'test4.html',{})
 def ajax1(request):
     p=Post.objects.all().order_by("-pub_date")
     #print(p.count())

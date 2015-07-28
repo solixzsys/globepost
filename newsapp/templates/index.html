@@ -62,47 +62,59 @@
 <body>
     <div class="container" style="box-shadow:0 0  5px   #888;top:300px">
 
-        <div class="row menu1" style="background-color:darkblue">
-            <div class="logotext ">
-
-
-                <nav id="navigator" class="navbar   navbar-default " role="navigation">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#" style="top:0">News</a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav " style="">
-                                <li><a href="#">Weather Report</a></li>
-                                <li><a href="#">Africa</a></li>
-                                <li><a href="#">MiddleEast</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Financial News</a></li>
-                                <li><a href="#">Entertainment</a></li>
-
-                            </ul>
-
-
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
-
-
-
-
-
-
-            </div>
-        </div>
-        <div class="row header1" style="top:100px;margin-top:50px">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	            <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="#">Brand</a>
+		            </div>
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			            <ul class="nav navbar-nav">
+				            <li class="active"><a href="#">Link</a></li>
+				            <li><a href="#">Link</a></li>
+				            <li class="dropdown">
+					            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					            <ul class="dropdown-menu">
+						            <li><a href="#">Action</a></li>
+						            <li><a href="#">Another action</a></li>
+						            <li><a href="#">Something else here</a></li>
+						            <li class="divider"></li>
+						            <li><a href="#">Separated link</a></li>
+						            <li class="divider"></li>
+						            <li><a href="#">One more separated link</a></li>
+					            </ul>
+				            </li>
+			            </ul>
+			            <form class="navbar-form navbar-left" role="search">
+				            <div class="form-group">
+					            <input type="text" class="form-control" placeholder="Search">
+				            </div>
+				            <button type="submit" class="btn btn-default">Submit</button>
+			            </form>
+			            <ul class="nav navbar-nav navbar-right">
+				            <li><a href="#">Link</a></li>
+				            <li class="dropdown">
+					            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					            <ul class="dropdown-menu">
+						            <li><a href="#">Action</a></li>
+						            <li><a href="#">Another action</a></li>
+						            <li><a href="#">Something else here</a></li>
+						            <li class="divider"></li>
+						            <li><a href="#">Separated link</a></li>
+					            </ul>
+				            </li>
+			            </ul>
+		            </div><!-- /.navbar-collapse -->
+	            </div><!-- /.container-fluid -->
+            </nav>
+        <div class="row header1" style="margin-top:0">
 
 
 
@@ -113,82 +125,32 @@
 
 
         </div>
-
-        <div class="row header2" style="background-color:#ffffff">
-            <div class="container">
-                <div class=" row">
-                    <div class="breakingnews col-xs-12 ">
-                        Breaking news
-                    </div>
-                </div>
-
-
-                <div class="row" onclick="alert(window.innerWidth)">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10 col-md-pull-1">
-                        <div class="imgwrap">
-                            <div id="imgslide">
-                                <div class="img_frame">
-                                    <img src="../static/image/Hydrangeas.jpg" />
-                                    <p>News Weather Report Africa NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Jellyfish.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Koala.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Lighthouse.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-
-                                <div class="img_frame">
-                                    <img src="../static/image/Penguins.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Tulips.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Hydrangeas.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Jellyfish.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Koala.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Lighthouse.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-
-                                <div class="img_frame">
-                                    <img src="../static/image/Penguins.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                                <div class="img_frame">
-                                    <img src="../static/image/Tulips.jpg" />
-                                    <p>News Weather Report Africa MiddleEast Sport Financial NewsEntertainment</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
+        <div class=" row">
+                        <div class="breakingnews col-xs-12 " style="height:20px; border: 1px solid">
+                            Breaking news
                         </div>
-
-
-                    </div>
-                    <div class="col-md-2"></div>
-
-                </div>
             </div>
+        <div class="row" >
+            <div id="slide_wrap ">
+            <div class="col-xs-12 col-md-10" id="roll_it" >
+                            
+   
+<img src="../static/image/Tulips.jpg" />
+<img src="../static/image/Penguins.jpg" />
+<img src="../static/image/Lighthouse.jpg" />
+<img src="../static/image/Koala.jpg" />
+<img src="../static/image/Jellyfish.jpg" />           
+<img src="../static/image/Hydrangeas.jpg" />
+<img src="../static/image/Tulips.jpg"  />
+<img src="../static/image/Penguins.jpg" />
+<img src="../static/image/Lighthouse.jpg" />
+<img src="../static/image/Koala.jpg" />
+<img src="../static/image/Jellyfish.jpg" />           
+<img src="../static/image/Hydrangeas.jpg" />
 
+            </div>
+            <div style="float:none; clear:both; "></div>
+</div>
 
         </div>
         <div class="row map_region" id="mymap">

@@ -1,4 +1,26 @@
 ﻿/// <reference path="_references.js" />
+
+$(window).load(function () {
+    $("#roll_it").carouFredSel({
+        
+        //items: 5,
+        width: '100%',
+        height: 'auto',
+        items                : 5,
+        responsive: true,
+        scroll: {
+            items: 3,
+            easing: "linear",
+            duration: 1000,
+            pauseOnHover: true
+        }
+    });
+
+});
+
+
+
+
 var limit = {
     beg:0,
     end:2
@@ -33,20 +55,11 @@ $(document).ready(function () {
     });
 
 
-    $("#imgslide").carouFredSel({
-        items: 5,
-        direction: "left",
-        align:"right",
-        scroll: {
-            items: 4,
-            //easing: "elastic",
-            duration: 1000,
-            pauseOnHover: true,
-            
-        }
-    });
-
-
+    /*	CarouFredSel: a circular, responsive jQuery carousel.
+	Configuration created by the "Configuration Robot"
+	at caroufredsel.dev7studios.com
+*/
+   
 
 
 
