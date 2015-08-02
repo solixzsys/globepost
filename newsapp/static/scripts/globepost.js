@@ -2,11 +2,11 @@
 
 $(window).load(function () {
     $("#roll_it").carouFredSel({
-        
+
         //items: 5,
         width: '100%',
         height: 'auto',
-        items                : 5,
+        items: 5,
         responsive: true,
         scroll: {
             items: 3,
@@ -22,27 +22,27 @@ $(window).load(function () {
 
 
 var limit = {
-    beg:0,
-    end:2
+    beg: 0,
+    end: 2
 };
 $(document).ready(function () {
-    
+
     var l = 0
-   //$(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent', 'width': '100%' }).removeClass("toTop")
-   // $(window).scroll(function (evt) {
-   //     l = $(window).scrollTop()
-   //     //console.log(l)
-        
-   //     if ((l > 80) && (window.outerWidth > 1000)) {
-   //         console.log(window.outerWidth)
-            $(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', }).addClass("toTop").slideToggle("3000")
-   //     } else {
-   //         $(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent','width':'100%' }).removeClass("toTop").fadeOut(3000)
-   //     }
-   // });
+    //$(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent', 'width': '100%' }).removeClass("toTop")
+    // $(window).scroll(function (evt) {
+    //     l = $(window).scrollTop()
+    //     //console.log(l)
+
+    //     if ((l > 80) && (window.outerWidth > 1000)) {
+    //         console.log(window.outerWidth)
+    $(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', }).addClass("toTop").slideToggle("3000")
+    //     } else {
+    //         $(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent','width':'100%' }).removeClass("toTop").fadeOut(3000)
+    //     }
+    // });
 
     $(".nav li").mouseover(function () {
-        $(this).css({"text-decoration-line":"underline","text-decoration-style":"solid"})
+        $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
     });
     $(".nav li").mouseleave(function () {
         $(this).css({ "text-decoration-line": "none" })
@@ -59,22 +59,22 @@ $(document).ready(function () {
 	Configuration created by the "Configuration Robot"
 	at caroufredsel.dev7studios.com
 */
-   
+
 
 
 
     var count = 11;
     var data = []
-    
-    
-   
+
+
+
     var ajaxreq = function () {
         $.ajax({
             url: "/ajax1",
             dataType: "json",
             success: function (data1) {
                 data = data1
-                
+
 
                 console.log("Inside ajax...................")
                 console.log(data)
@@ -84,21 +84,21 @@ $(document).ready(function () {
 
 
         });
-        
+
         console.log("Done !!!!")
-        
+
     };
 
-    var str1 = '<div class="row" style="margin-bottom:10px">'+
+    var str1 = '<div class="row" style="margin-bottom:10px">' +
 
-                            '<div class="col-md-2 thumbnail">'+
+                            '<div class="col-md-2 thumbnail">' +
 
                                 //'<img src="../static/image/Koala.jpg" height="100" width="150" />'+
 
-                            '</div>'+
-                            '<div class="col-md-10" style="padding:5px;">'+
+                            '</div>' +
+                            '<div class="col-md-10" style="padding:5px;">' +
                                 '<p></p></div></div>'
-    
+
 
 
 
@@ -107,18 +107,18 @@ $(document).ready(function () {
         console.log("Inside Populate...................")
         console.log("befor loop ", beg, end);
         for (var i = beg; i < end; i++) {
-            
-           
-            $(str1).attr({"id":i}).appendTo("#listing");
+
+
+            $(str1).attr({ "id": i }).appendTo("#listing");
             $("#" + i + " p").html('<a href="#">' + data[i].fields.title + "</a>")
                 .append("<p>" + data[i].fields.summary + "</p>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.pub_date + " </i></div>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.site + ":&nbsp&nbsp</i></div>");
-            $("#" + i + " .thumbnail").html('<img src='+data[i].fields.thumbnail+' height="100" width="150" />')
+            $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' height="100" width="150" />')
         };
-            limit.beg = limit.end + 1;
-            limit.end = limit.end + 2;
-            console.log("after loop", limit.beg, limit.end);
+        limit.beg = limit.end + 1;
+        limit.end = limit.end + 2;
+        console.log("after loop", limit.beg, limit.end);
     }
 
     ajaxreq();
@@ -136,10 +136,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         winhoff = window.document.body.offsetHeight;
         if ((($(window).scrollTop() + winh + 50) > winhoff) && (limit.end < data.length)) {
-            
+
             console.log("inside scroll ", limit.beg, limit.end);
-           populate(limit.beg, limit.end);
-            
+            populate(limit.beg, limit.end);
+
             console.log("down....................................");
             bench = bench + 500;
         }
@@ -152,7 +152,7 @@ $(document).ready(function () {
             $("#navigator").css({ "visibility": "visible" });
         }
         console.log("sbl sbt..... ", sbl, sbt)
-        if(window.innerWidth>1000){
+        if (window.innerWidth > 1000) {
             if ((ca.offsetTop - window.scrollY) < 2) {
                 console.log("inside sbl sbt..... ", sbl, (sbt - window.scrollY))
                 listcont.css({ "float": "right" });
@@ -164,8 +164,8 @@ $(document).ready(function () {
                 //st.css({ "top": "0" })
                 sb.css({ "left": ca.offsetLeft + "px" });
                 sb.css({ "width": sbw + "px" });
-           
-            
+
+
             } else {
                 sb.css({ "position": "relative", "top": "0", "left": "0", "clear": "none" });
                 listcont.css({ "top": "0" });
@@ -178,20 +178,35 @@ $(document).ready(function () {
 
 
     var pop_thumb = function () {
-        var thumbimg = $(".img_frame img");
+        var w = 0;
+        var mydata = [];
+        var thumbimg = $("#roll_it img");
+
+        for (k = 0; k < data.length; k++) {
+            temp = data[k].fields.site;
+            
+            if ((temp.search("Reuters") == -1) & (mydata.length<20) ) {
+                mydata[w] = data[k];
+                //console.log('mydata................................................',mydata)
+                w = w + 1;
+            }
+        }
+        //console.log("mydata................................................",mydata)
         for (var j = 0; j < thumbimg.length; j++) {
-            thumbimg[j]["src"] = data[j].fields.thumbnail;
+            thumbimg[j]["src"] = mydata[j].fields.thumbnail;
+           $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
         }
 
-        var thumb = $(".img_frame p");
-        thumb.each(function (i, e) {
+        
 
-            $(this).html('<div  style="height:80px;"><a href="#">' + data[i].fields.title + "</a></div>");
-        });
-        //alert("pop")
+       
+        
+
+
+
     };
 
-
+    
 
 
 });

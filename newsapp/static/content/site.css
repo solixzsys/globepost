@@ -48,8 +48,17 @@ input[type="checkbox"].input-validation-error {
 	background-color: white;
 	padding: 9px;
 	margin: 7px;
-    width:200px;
+   width:100%;
     
+}
+#roll_it div{
+    
+    /*position:absolute;*/
+     width:220px;
+    /*background-color:ButtonShadow;*/
+    margin:10px;
+    /*overflow-x:visible;*/
+    float:left;  
 }
 #roll_it{
     margin: 20px 0;
@@ -64,5 +73,5 @@ input[type="checkbox"].input-validation-error {
 }
 
 #slide_wrap{
-    /*height:200px;*/
+    
 }
