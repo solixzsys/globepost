@@ -43,9 +43,11 @@ $(document).ready(function () {
 
     $(".nav li").mouseover(function () {
         $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
+        $(this).addClass("active")
     });
     $(".nav li").mouseleave(function () {
         $(this).css({ "text-decoration-line": "none" })
+        $(this).removeClass("active");
     });
     $(".navbar-header a").mouseover(function () {
         $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
@@ -114,7 +116,11 @@ $(document).ready(function () {
                 .append("<p>" + data[i].fields.summary + "</p>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.pub_date + " </i></div>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.site + ":&nbsp&nbsp</i></div>");
-            $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' height="100" width="150" />')
+            if (data[i].fields.site.search("Reuters")==-1){
+                $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' height="100" width="150" />')
+            } else {
+                $("#" + i + " .thumbnail").removeClass("thumbnail")
+            }
         };
         limit.beg = limit.end + 1;
         limit.end = limit.end + 2;
