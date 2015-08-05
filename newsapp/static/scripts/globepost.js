@@ -1,5 +1,22 @@
 ﻿/// <reference path="_references.js" />
 
+
+//*********************************Segmenting news post by country**********************************
+var postlocation = {
+    "Africa": {
+        "Nigeria": ["punch", "pm news"],
+    },
+    "America": {
+        "USA": ["cnn", "Reuters", "cbn", "yahoo"]
+    },
+    "Europe": {
+        "UK": ["sky news", "bbc"]
+    },
+
+};
+
+
+                             //************** Aplication of Caroufedsel to slideing thumbnail
 $(window).load(function () {
     $("#roll_it").carouFredSel({
 
@@ -18,7 +35,7 @@ $(window).load(function () {
 
 });
 
-
+                                                        //**********************************************caroufedsel ends here
 
 
 var limit = {
@@ -57,10 +74,7 @@ $(document).ready(function () {
     });
 
 
-    /*	CarouFredSel: a circular, responsive jQuery carousel.
-	Configuration created by the "Configuration Robot"
-	at caroufredsel.dev7studios.com
-*/
+    
 
 
 
@@ -82,6 +96,8 @@ $(document).ready(function () {
                 console.log(data)
                 populate(limit.beg, limit.end);
                 pop_thumb();
+                chec_data(data);
+                console.log("nnnnnnnnnnnn ", num_country);
             }
 
 
@@ -93,12 +109,12 @@ $(document).ready(function () {
 
     var str1 = '<div class="row" style="margin-bottom:10px">' +
 
-                            '<div class="col-md-2 thumbnail">' +
+                            '<div class="col-sm-2 thumbnail">' +
 
                                 //'<img src="../static/image/Koala.jpg" height="100" width="150" />'+
 
                             '</div>' +
-                            '<div class="col-md-10" style="padding:5px;">' +
+                            '<div class="col-sm-10" style="padding:5px;">' +
                                 '<p></p></div></div>'
 
 
@@ -181,7 +197,7 @@ $(document).ready(function () {
 
 
 
-
+    //***********************************THis section deal with the population of sliding thumbnails
 
     var pop_thumb = function () {
         var w = 0;
@@ -200,11 +216,11 @@ $(document).ready(function () {
         //console.log("mydata................................................",mydata)
         for (var j = 0; j < thumbimg.length; j++) {
             thumbimg[j]["src"] = mydata[j].fields.thumbnail;
-           $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
+            $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
         }
 
         
-
+        //********************************Sliding of thumbnails ends here**************************
        
         
 
@@ -212,7 +228,53 @@ $(document).ready(function () {
 
     };
 
+    //*********************************population the sidebar lebel**********************************
+
+    var num_country = {
+        africa : 0,
+        europe :0,
+        america :0,
+        meast: 0,
+        aus: 0
+    };
+
+    function chec_data(data) {
+        africa = 0; europe=0; america=0; meast=0; aus = 0;
+        $.each(data, function (i, e) {
+            var site = e.fields.site;
+            
+           
+                
+            if ((site == "yahoo") || (site == "Reuters news") || (site == "cbn")||(site =="cnn")) {
+                    ++america;
+                             
+            }else if((site ==  "pm news")||(site =="punch")){
+                    ++africa;
+                
+                 
+                    
+               }else if((site == "Sky news")||(site =="bbc")){
+                    ++europe;
+               } else {
+                   console.log("unknown.............",site)
+               }
+                //case "yahoo":
+                //    meast++;
+                //    break;
+                //case "yahoo":
+                //    aus++;
+                //    break
+                
+            
+        });
+        num_country.africa = africa;
+        num_country.america = america;
+        num_country.europe = europe;
+        $("#afr").html(africa)
+        $("#us").html(america)
+        $("#eu").html(europe)
+        $("#world").html(africa+america+europe)
+    }
     
-
-
+    
 });
