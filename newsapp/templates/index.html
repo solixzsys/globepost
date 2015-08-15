@@ -5,7 +5,7 @@
     <link href="../static/content/site.css" rel="stylesheet" />
     <script src="../static/scripts/jquery-1.10.2.js"></script>
     <script src="../static/scripts/bootstrap.js"></script>
-    <script src="../static/scripts/globepost.js"></script>
+    
     <script src="../static/scripts/jquery.carouFredSel-6.2.1-packed.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script src="../static/scripts/globepost.js"></script>
@@ -77,13 +77,13 @@
 		            <!-- Collect the nav links, forms, and other content for toggling -->
 		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			            <ul style="margin-left:20%" class="nav navbar-nav ">
-				            <li class="active"><a href="#">World News</a></li>
-				            <li><a href="#">Africa</a></li>
-				            <li><a href="#">America</a></li>
+				            <li class="active"><a href="/ajax1">World News</a></li>
+				            <li><a href="/africa">Africa</a></li>
+				            <li><a href="/america">America</a></li>
                             <li><a href="#">Asia</a></li>
                             <li><a href="#">Austrialia</a></li>
                             <li><a href="#">MiddleEast</a></li>
-                            <li><a href="#">Europe</a></li>
+                            <li><a href="europe">Europe</a></li>
 
 			            </ul>
 			            
@@ -148,33 +148,53 @@
                 <div class="row">
                     <div id="sidebar" class="col-md-2 " style=" padding:0;  ">
                         <ul class="list-group" style="padding:0; margin-bottom:0;">
-                            <li class="list-group-item">
-                                <span id="world" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse1">
+                                <span id="world" class="badge">0</span>
                                 World
+                                 <div id="collapse1" class="collapse">                    
+                                 </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="afr" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse2">
+                                <span id="afr" class="badge">0</span>
                                 Africa
+                                 <div id="collapse2" class="collapse">
+                       
+                                </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="eu" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse3">
+                                <span id="eu" class="badge">0</span>
                                 Europe
+                                 <div id="collapse3" class="collapse">
+                       
+                                </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="me" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse4">
+                                <span id="me" class="badge">0</span>
                                 MiddleEast
+                                 <div id="collapse4" class="collapse">
+                       
+                                </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="asia" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse5">
+                                <span id="asia" class="badge">0</span>
                                 Asia
+                                 <div id="collapse5" class="collapse">
+                       
+                                </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="us" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse6">
+                                <span id="us" class="badge">0</span>
                                 America
+                                 <div id="collapse6" class="collapse">
+                       
+                                </div>
                             </li>
-                            <li class="list-group-item">
-                                <span id="aus" class="badge">14</span>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse7">
+                                <span id="aus" class="badge">0</span>
                                 Austrialia
+                                 <div id="collapse7" class="collapse">
+                       
+                                </div>
                             </li>
                         </ul>
                     </div>

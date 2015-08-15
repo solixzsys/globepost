@@ -17,7 +17,16 @@ var postlocation = {
 
 
                              //************** Aplication of Caroufedsel to slideing thumbnail
-$(window).load(function () {
+
+                                                        //**********************************************caroufedsel ends here
+
+
+var limit = {
+    beg: 0,
+    end: 2
+};
+$(document).ready(function () {
+
     $("#roll_it").carouFredSel({
 
         //items: 5,
@@ -33,17 +42,9 @@ $(window).load(function () {
         }
     });
 
-});
-
-                                                        //**********************************************caroufedsel ends here
 
 
-var limit = {
-    beg: 0,
-    end: 2
-};
-$(document).ready(function () {
-
+   
     var l = 0
     //$(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent', 'width': '100%' }).removeClass("toTop")
     // $(window).scroll(function (evt) {
@@ -52,29 +53,40 @@ $(document).ready(function () {
 
     //     if ((l > 80) && (window.outerWidth > 1000)) {
     //         console.log(window.outerWidth)
-    $(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', }).addClass("toTop").slideToggle("3000")
-    //     } else {
-    //         $(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent','width':'100%' }).removeClass("toTop").fadeOut(3000)
-    //     }
-    // });
+    //$(".navbar-default").css({ 'background-color': '#f8f8f8', 'border-color': '#e7e7e7', 'border-radius': '0 0 2px 2px', }).addClass("toTop").slideToggle("3000")
+    ////     } else {
+    ////         $(".navbar-default").css({ 'background-color': 'Transparent', 'border-color': 'Transparent','width':'100%' }).removeClass("toTop").fadeOut(3000)
+    ////     }
+    //// });
 
     $(".nav li").mouseover(function () {
         $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
         $(this).addClass("active")
     });
+    $(".nav li").click(function () {
+        normaliza_font();
+        $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid","font-weight":"bolder" })
+        
+    });
     $(".nav li").mouseleave(function () {
         $(this).css({ "text-decoration-line": "none" })
         $(this).removeClass("active");
     });
-    $(".navbar-header a").mouseover(function () {
-        $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
-    });
-    $(".navbar-header a").mouseleave(function () {
-        $(this).css({ "text-decoration-line": "none" })
-    });
 
+    function normaliza_font(){
+    $(".nav li").each(function (i, e) {
+        $(this).css({ "font-weight": "normal" })
+    });
+    }
+    //$(".navbar-header a").mouseover(function () {
+    //    $(this).css({ "text-decoration-line": "underline", "text-decoration-style": "solid" })
+    //});
+    //$(".navbar-header a").mouseleave(function () {
+    //    $(this).css({ "text-decoration-line": "none" })
+    //});
 
-    
+  
+  
 
 
 
@@ -83,29 +95,80 @@ $(document).ready(function () {
     var data = []
 
 
-
+    var path = window.location.pathname;
+    if (path == "/") path = "/ajax1";
     var ajaxreq = function () {
         $.ajax({
-            url: "/ajax1",
+            url: path,
             dataType: "json",
             success: function (data1) {
                 data = data1
 
 
-                console.log("Inside ajax...................")
-                console.log(data)
+                //console.log("Inside ajax...................")
+                //console.log(data)
                 populate(limit.beg, limit.end);
                 pop_thumb();
                 chec_data(data);
-                console.log("nnnnnnnnnnnn ", num_country);
+                populate_sidebar();
+               
             }
 
 
         });
 
-        console.log("Done !!!!")
+        //console.log("Done !!!!")
 
     };
+
+    function sidebar_afr() {
+        var a = []; afr2 = [];
+        //console.log("aaaaaaaaaaaaa........", afr_post.slice(0,5));
+        afr2 = afr_post.slice(0, 5);
+        $.each(afr2, function (i, e) {
+            //if (!(afr_post[i] == a[5]))
+                $("#collapse2").append("<h6><i>" + afr2[i] + "</i></h6>");
+
+        });
+    }
+    function sidebar_eu() {
+        var a = []; eu2 = [];
+        //console.log("aaaaaaaaaaaaa........", eu_post.slice(0,5));
+        eu2 = eu_post.slice(0, 5);
+        $.each(eu2, function (i, e) {
+            //if (!(afr_post[i] == a[5]))
+            $("#collapse3").append("<h6><i>" + eu2[i] + "</i></h6>");
+            //console.log("**************************************************************************************************************")
+        });
+    }
+    function sidebar_us() {
+        var a = []; us2 = [];
+        //console.log("aaaaaaaaaaaaa........", eu_post.slice(0,5));
+        us2 = us_post.slice(0, 5);
+        $.each(us2, function (i, e) {
+            //if (!(afr_post[i] == a[5]))
+            $("#collapse6").append("<h6><i>" + us2[i] + "</i></h6>");
+            //console.log("**************************************************************************************************************")
+        });
+    }
+
+    function populate_sidebar() {
+
+        var sidebar_ids = ["afr", "world", "us", "eu"];
+        $.each(sidebar_ids, function (i, e) {
+            if (e == "eu") sidebar_eu();
+            if (e == "afr") sidebar_afr();
+            if (e == "us") sidebar_us();
+            
+
+            
+        });
+
+
+    }
+
+
+
 
     var str1 = '<div class="row" style="margin-bottom:10px">' +
 
@@ -122,8 +185,8 @@ $(document).ready(function () {
 
 
     function populate(beg, end) {
-        console.log("Inside Populate...................")
-        console.log("befor loop ", beg, end);
+        //console.log("Inside Populate...................")
+        //console.log("befor loop ", beg, end);
         for (var i = beg; i < end; i++) {
 
 
@@ -140,7 +203,7 @@ $(document).ready(function () {
         };
         limit.beg = limit.end + 1;
         limit.end = limit.end + 2;
-        console.log("after loop", limit.beg, limit.end);
+        //console.log("after loop", limit.beg, limit.end);
     }
 
     ajaxreq();
@@ -159,10 +222,10 @@ $(document).ready(function () {
         winhoff = window.document.body.offsetHeight;
         if ((($(window).scrollTop() + winh + 50) > winhoff) && (limit.end < data.length)) {
 
-            console.log("inside scroll ", limit.beg, limit.end);
+            //console.log("inside scroll ", limit.beg, limit.end);
             populate(limit.beg, limit.end);
 
-            console.log("down....................................");
+            //console.log("down....................................");
             bench = bench + 500;
         }
         //console.log("st ",$(window).scrollTop(),"winhoff ",winhoff);
@@ -173,10 +236,10 @@ $(document).ready(function () {
         } else {
             $("#navigator").css({ "visibility": "visible" });
         }
-        console.log("sbl sbt..... ", sbl, sbt)
+        //console.log("sbl sbt..... ", sbl, sbt)
         if (window.innerWidth > 1000) {
             if ((ca.offsetTop - window.scrollY) < 2) {
-                console.log("inside sbl sbt..... ", sbl, (sbt - window.scrollY))
+                //console.log("inside sbl sbt..... ", sbl, (sbt - window.scrollY))
                 listcont.css({ "float": "right" });
                 sb.css({ "position": "fixed" });
                 //st.css({ "position": "fixed" });
@@ -237,26 +300,27 @@ $(document).ready(function () {
         meast: 0,
         aus: 0
     };
-
+    var afr_post = []; var us_post = []; var eu_post = []; var afrpost = []; var uspost = []; var eupost = [];
     function chec_data(data) {
-        africa = 0; europe=0; america=0; meast=0; aus = 0;
+        africa = 0; europe = 0; america = 0; meast = 0; aus = 0;
+        
         $.each(data, function (i, e) {
             var site = e.fields.site;
             
            
                 
             if ((site == "yahoo") || (site == "Reuters news") || (site == "cbn")||(site =="cnn")) {
-                    ++america;
+                ++america; us_post[i] = e.fields.title; uspost[i] = e;
                              
             }else if((site ==  "pm news")||(site =="punch")){
-                    ++africa;
+                ++africa; afr_post[i] = e.fields.title; afrpost[i] = e;
                 
                  
                     
                }else if((site == "Sky news")||(site =="bbc")){
-                    ++europe;
+                   ++europe; eu_post[i] = e.fields.title; eupost[i] = e;
                } else {
-                   console.log("unknown.............",site)
+                   //console.log("unknown.............",site)
                }
                 //case "yahoo":
                 //    meast++;
@@ -267,14 +331,34 @@ $(document).ready(function () {
                 
             
         });
+        afr_post = compact_data(afr_post);
+        us_post = compact_data(us_post);
+        eu_post = compact_data(eu_post);
         num_country.africa = africa;
         num_country.america = america;
         num_country.europe = europe;
         $("#afr").html(africa)
         $("#us").html(america)
         $("#eu").html(europe)
-        $("#world").html(africa+america+europe)
+        $("#world").html(africa + america + europe)
+      
     }
-    
+    function compact_data(data) {
+        a = []; var data2 = []; j = 0;
+        $.each(data, function (i, e) {
+            if(!(e==undefined)){
+                data2[j] = e;
+                ++j;
+                //console.log("eeeeeeeeeeeee.........", e);
+            }
+        });
+        //console.log("data2.........", data2);
+        return data2;
+    }
+
+
+    function print_local(loc_data) {
+        console.log("@@@@@@@@@@@ "+loc_data+afrpost)     
+    }
     
 });
