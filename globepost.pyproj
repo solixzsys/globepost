@@ -4,8 +4,8 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>globepost</Name>
     <RootNamespace>globepost</RootNamespace>
-    <InterpreterId>{3e0a5015-5586-4a5e-adfa-90d02ed907fe}</InterpreterId>
-    <InterpreterVersion>3.4</InterpreterVersion>
+    <InterpreterId>{4a80b1ff-103f-4714-989e-fe8a81596e8a}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>

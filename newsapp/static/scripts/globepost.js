@@ -103,12 +103,13 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data1) {
                 data = data1
+                pop_thumb();
 
 
                 //console.log("Inside ajax...................")
                 //console.log(data)
                 populate(limit.beg, limit.end);
-                pop_thumb();
+                
                 chec_data(data);
                 populate_sidebar();
                
@@ -263,9 +264,9 @@ $(document).ready(function () {
     //***********************************THis section deal with the population of sliding thumbnails
 
     var pop_thumb = function () {
-        var w = 0;
+        var w = 0; var divs = "";
         var mydata = [];
-        var thumbimg = $("#roll_it img");
+      var thumbimg = $("#roll_it");
 
         for (k = 0; k < data.length; k++) {
             temp = data[k].fields.site;
@@ -277,12 +278,20 @@ $(document).ready(function () {
             }
         }
         //console.log("mydata................................................",mydata)
-        for (var j = 0; j < thumbimg.length; j++) {
-            thumbimg[j]["src"] = mydata[j].fields.thumbnail;
-            $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
-        }
+        for (var j = 0; j < 5; j++) {
+            divs += '<div style="width:220px;margin:10px;float:left; "><img src=' + mydata[j].fields.thumbnail + ' style="width:100%" /></div>';
+            
 
+
+            
+           // $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
+
+
+
+            //console.log("^^^^^^^^^", divs)
+        }
         
+        $("#roll_it").html(divs);
         //********************************Sliding of thumbnails ends here**************************
        
         
