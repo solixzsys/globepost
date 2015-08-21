@@ -95,6 +95,7 @@
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.mousewheel.min.js" />
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.touchSwipe.min.js" />
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.transit.min.js" />
+    <Content Include="newsapp\static\image\transparent_ph.png" />
     <Content Include="newsapp\templates\index - Copy.html" />
     <Content Include="newsapp\templates\index1.html" />
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\jquery.carouFredSel-6.2.1-packed.js" />

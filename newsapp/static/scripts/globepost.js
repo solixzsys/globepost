@@ -278,8 +278,8 @@ $(document).ready(function () {
             }
         }
         //console.log("mydata................................................",mydata)
-        for (var j = 0; j < 5; j++) {
-            divs += '<div style="width:220px;margin:10px;float:left; "><img src=' + mydata[j].fields.thumbnail + ' style="width:100%" /></div>';
+        for (var j = 0; j < 15; j++) {
+            divs += '<div ><img src=' + mydata[j].fields.thumbnail + ' /></div>';
             
 
 
