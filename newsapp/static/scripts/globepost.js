@@ -19,7 +19,11 @@ var postlocation = {
                              //************** Aplication of Caroufedsel to slideing thumbnail
 
                                                         //**********************************************caroufedsel ends here
-
+function show_modal(title,summary) {
+    $("#myModalLabel").html(title)
+    $(".modal-body").html(summary)
+    console.log("inside call........ ", title, "---", summary);
+}
 
 var limit = {
     beg: 0,
@@ -171,7 +175,7 @@ $(document).ready(function () {
 
 
 
-    var str1 = '<div class="row" style="margin-bottom:10px">' +
+    var str1 = '<div  class="row" style="margin-bottom:10px">' +
 
                             '<div class="col-sm-2 thumbnail">' +
 
@@ -182,31 +186,44 @@ $(document).ready(function () {
                                 '<p></p></div></div>'
 
 
-
+    
 
 
     function populate(beg, end) {
-        //console.log("Inside Populate...................")
+        console.log("Inside Populate...................",data)
         //console.log("befor loop ", beg, end);
         for (var i = beg; i < end; i++) {
 
-
+            var t = data[i].fields.title;
+            var s = data[i].fields.summary;
             $(str1).attr({ "id": i }).appendTo("#listing");
-            $("#" + i + " p").html('<a href="#">' + data[i].fields.title + "</a>")
-                .append("<p>" + data[i].fields.summary + "</p>")
+            $("#" + i + " p").html('<a ' + "id=lnk" + i + ' href="#myModal" data-toggle="modal" >' + t + "</a>")
+                .append("<p>" + s + "</p>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.pub_date + " </i></div>")
                 .append('<div id="note" style="float:right"><i style="font-size:8px">' + data[i].fields.site + ":&nbsp&nbsp</i></div>");
+
+            var $ele = $("p #lnk" + i)
+            $ele.on("click", { "title": t, "summary": data[i].fields.content }, function (e) {
+                console.log(e.data.title)
+                show_modal(e.data.title, e.data.summary)
+            });
+            //$("#"+i).on("click", "p #lnk" + i, function () {
+            //    console.log("b4 call........ ", t, "---", s);
+            //    show_modal(data[i-2].fields.title, data[i-2].fields.summary);
+            //});
             if (data[i].fields.site.search("Reuters")==-1){
                 $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' height="100" width="150" />')
             } else {
                 $("#" + i + " .thumbnail").removeClass("thumbnail")
             }
+
+            
         };
         limit.beg = limit.end + 1;
         limit.end = limit.end + 2;
         //console.log("after loop", limit.beg, limit.end);
     }
-
+   
     ajaxreq();
     var bench = 700;
     var winhoff = window.document.body.offsetHeight;
@@ -279,11 +296,15 @@ $(document).ready(function () {
         }
         //console.log("mydata................................................",mydata)
         for (var j = 0; j < 15; j++) {
-            divs += '<div ><img src=' + mydata[j].fields.thumbnail + ' /></div>';
-            
+            divs += '<div '+"id=tb" +j+'  ><img src=' + mydata[j].fields.thumbnail + ' /></div>';
+            $(" div").on("click", "#tb0 img", function () {
+                 alert("ssssssssssss");
+                 $("#tb0 img").on("click");
+
+            });
 
 
-            
+             
            // $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
 
 
@@ -294,7 +315,7 @@ $(document).ready(function () {
         $("#roll_it").html(divs);
         //********************************Sliding of thumbnails ends here**************************
        
-        
+       
 
 
 

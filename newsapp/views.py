@@ -21,11 +21,11 @@ def ajax1(request,section):
     p=""
     if request.is_ajax():
         if section=="africa":
-            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='NIGERIA'))
+            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='NIGERIA')).order_by("-pub_date")
         elif section=="america":
-            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='UNITED STATES'))
+            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='UNITED STATES')).order_by("-pub_date")
         elif section=="europe":
-            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='UNITED KINGDOM'))
+            p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='UNITED KINGDOM')).order_by("-pub_date")
         else:
             p=Post.objects.all().order_by("-pub_date")
     
