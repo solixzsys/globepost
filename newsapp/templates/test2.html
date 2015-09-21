@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-
+<script src="../static/scripts/jquery-1.10.2.min.js"></script>
 <script src="../static/scripts/jquery-1.10.2.js"></script>
 <script src="../static/scripts/bootstrap.js"></script>
 <script src="../static/scripts/jquery.carouFredSel-6.2.1.js"></script>
@@ -12,82 +12,167 @@
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.mousewheel.min.js"></script>
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.touchSwipe.min.js"></script>
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.transit.min.js"></script>
-<script src="../static/scripts/globepost.js"></script>
+
 <link href="../static/content/bootstrap.css" rel="stylesheet" />
+
+
+
+
+ 
+    
+    <script type="text/javascript">
+       
+        var globepost = {};
+
+
+
+        globepost.ajax_call= function () {
+            var ajax;
+            if (window.XMLHttpRequest) {
+                ajax = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                ajax = new ActiveXObject("MSXML2.XMLHTTP.3.0");
+            }
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4) {
+                    globepost.result = JSON.parse(ajax.response);
+
+
+                } else {
+                    console.log("status..........." + ajax.status)
+                }
+            };
+            ajax.open("GET", "http://localhost:8000/ajax1", true);
+            ajax.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            ajax.setRequestHeader("Accept", "application/json");
+
+            ajax.send(null);
+
+
+
+
+            //$.ajax({
+            //    url: "http://localhost:8000/ajax1",
+            //    dataType: "json",
+            //    success: function (data1,status) {                
+
+
+            //        console.log("Inside ajax...................")
+            //        console.log("status......... " + status)
+            //        globepost.result = data1;
+
+
+            //    }
+
+
+            //});
+
+           
+
+        };
+         
+      
+                globepost.get_post= function () {
+                    
+                    return globepost.result;
+                };
+                globepost.get_post_single = function (num) {
+                    
+                    return globepost.result[num - 1];
+                }
+                globepost.get_post_slice = function (start, end) {
+                    
+                return globepost.result.slice(start - 1, end);
+
+                };
+                globepost.get_post_by_site = function (site) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if (e.fields.site == site) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+                };
+                globepost.get_post_less = function (date) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if (new Date(e.fields.pub_date) < new Date(date)) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+
+                };
+                globepost.get_post_less_or_eq = function (date) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if (new Date(e.fields.pub_date) <= new Date(date)) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+
+                };
+                globepost.get_post_gt = function (date) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if (new Date(e.fields.pub_date) > new Date(date)) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+
+                };
+                globepost.get_post_gt_or_eq = function (date) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if (new Date(e.fields.pub_date) >= new Date(date)) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+
+                };
+                globepost.get_post_eq = function (date) {
+                    var post = globepost.result;
+                    var posts = [];
+                    post.forEach(function (e, i) {
+                        if ((new Date(e.fields.pub_date) - new Date(date)==0)) {
+                            posts.push(e);
+                        }
+                    });
+                    return posts;
+
+                }
+
+
+
+
+            globepost.setdata= function (ele) {
+                var ele = document.getElementById(ele);
+                ele.innerHTML = globepost.result[0].fields.summary;
+                return;
+            };
+            
+        
+    </script>
+
 
 </head>
 
+
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+   
+   
 
-
-                <div style="width:200px; overflow-wrap:normal; background-color:#ffd800">
-
-                    <ul>
-                    <li style="width:200px;"  data-toggle="collapse" data-target="#collapse1">
-                        Accordion heading 1
-                    </li>
-                    </ul>
-                    <div id="collapse1" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                    </div>
-                </div>
-
-
-
-                   <div id="sidebar" class="col-md-2 " style=" padding:0;  ">
-                        <ul class="list-group" style="padding:0; margin-bottom:0;">
-                            <li class="list-group-item btn " data-toggle="collapse" data-target="#collapse2">
-                                <span id="world" class="badge">0</span>
-                                World
-                                <div id="collapse2" class="collapse">
-                       < Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
-                    </div>
-                            </li>
-                            <li class="list-group-item">
-                                <span id="afr" class="badge">0</span>
-                                Africa
-                            </li>
-                            <li class="list-group-item">
-                                <span id="eu" class="badge">0</span>
-                                Europe
-                            </li>
-                            <li class="list-group-item">
-                                <span id="me" class="badge">0</span>
-                                MiddleEast
-                            </li>
-                            <li class="list-group-item">
-                                <span id="asia" class="badge">0</span>
-                                Asia
-                            </li>
-                            <li class="list-group-item">
-                                <span id="us" class="badge">0</span>
-                                America
-                            </li>
-                            <li class="list-group-item">
-                                <span id="aus" class="badge">0</span>
-                                Austrialia
-                            </li>
-                        </ul>
-                    </div>
-
-
-
-
-
-
-            </div>
-        </div>
-
-    </div>
+    <div id="con"></div>
 
 
 

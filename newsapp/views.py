@@ -19,6 +19,7 @@ def test4(request):
 def ajax1(request,section):
     print(section)
     p=""
+    print ("********************"+ str(request.is_ajax()))
     if request.is_ajax():
         if section=="africa":
             p=Post.objects.filter(feed_url__country=Country.objects.get(country_name='NIGERIA')).order_by("-pub_date")

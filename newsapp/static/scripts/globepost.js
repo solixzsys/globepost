@@ -110,8 +110,8 @@ $(document).ready(function () {
                 pop_thumb();
 
 
-                //console.log("Inside ajax...................")
-                //console.log(data)
+                console.log("Inside ajax...................")
+                console.log(data1)
                 populate(limit.beg, limit.end);
                 
                 chec_data(data);
