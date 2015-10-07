@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     # Examples:
     #url(r'^app$', 'app.views.home', name='home'),
     url(r'^index1$', 'newsapp.views.test', name='test'),
+    url(r'^index_1$', 'newsapp.views.test_1', name='test_1'),
     url(r'^test1$', 'newsapp.views.test1', name='test1'),
     url(r'^test2$', 'newsapp.views.test2', name='test2'),
     url(r'^test4$', 'newsapp.views.test4', name='test4'),

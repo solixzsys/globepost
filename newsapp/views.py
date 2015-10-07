@@ -10,6 +10,8 @@ def home(request):
 
 def test(request):
     return render(request,'index1.html',{})
+def test_1(request):
+    return render(request,'index_1.html',{})
 def test1(request):
     return render(request,'test1.html',{})
 def test2(request):

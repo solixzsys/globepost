@@ -12,7 +12,7 @@
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.mousewheel.min.js"></script>
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.touchSwipe.min.js"></script>
 <script src="../static/carouFredSel-master/carouFredSel-master/helper-plugins/jquery.transit.min.js"></script>
-
+<script src="../static/scripts/handlebars-v4.0.2.js"></script>
 <link href="../static/content/bootstrap.css" rel="stylesheet" />
 
 
@@ -23,7 +23,11 @@
     <script type="text/javascript">
        
         var globepost = {};
-
+        globepost.country = {
+            nigeria: ["pm news", "punch"],
+            america: ["cnn", "cbn", "reuters news", "yahoo"],
+            europe: ["sky news","bbc"]
+        }
 
 
         globepost.ajax_call= function () {
@@ -36,7 +40,7 @@
             ajax.onreadystatechange = function () {
                 if (ajax.readyState == 4) {
                     globepost.result = JSON.parse(ajax.response);
-
+                    handle();
 
                 } else {
                     console.log("status..........." + ajax.status)
@@ -150,6 +154,19 @@
                     return posts;
 
                 }
+                globepost.get_post_by_country = function (country) {
+                    var post = globepost.result||[];
+                    var posts = [];
+                    var country = country.toLowerCase();
+                    post.forEach(function (e, i) {
+                        var site = e.fields.site.toLowerCase();
+                        if (globepost.country[country].indexOf(site) >= 0) {
+                            posts.push(e);
+                        }
+                        
+                    });
+                    return posts;
+                }
 
 
 
@@ -159,7 +176,22 @@
                 ele.innerHTML = globepost.result[0].fields.summary;
                 return;
             };
-            
+            globepost.ajax_call();
+        
+            var handle=function () {
+                
+                var context = {
+                    a: function () {  return globepost.result},
+                    b: "This is my first post!"
+                };
+                console.log("Inside jq............................")
+                var source = $("#entry-template").html();
+                var template = Handlebars.compile(source);
+                
+                var ht = template(context);
+                console.log("html................"+ht)
+                $(document.body).append(ht)
+            };
         
     </script>
 
@@ -169,10 +201,17 @@
 
 
 <body>
-   
-   
-
-    <div id="con"></div>
+   {% verbatim %}
+  <script id="entry-template" type="text/x-handlebars-template">
+      
+       {{#each a}}
+          <p><a href="{{fields.post_url}}">  {{fields.title}}</a></p>
+      {{/each}}
+    
+  </script>
+  {% endverbatim %}
+<div id="con"></div>
+    
 
 
 

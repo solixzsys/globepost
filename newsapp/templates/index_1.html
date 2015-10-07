@@ -1,0 +1,263 @@
+<html>
+<head>
+    <title></title>
+     <link href="../static/content/bootstrap.css" rel="stylesheet" />
+    <link href="../static/content/site.css" rel="stylesheet" />
+    <script src="../static/scripts/jquery-1.10.2.js"></script>
+    <script src="../static/scripts/bootstrap.js"></script>
+    
+    <script src="../static/scripts/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="../static/scripts/globepost.js"></script>
+
+    <style>
+        .header1{
+            background-color:#888;
+        }
+        .header2{
+            background-color:#808080;
+        }
+        .map_region{
+            background-color:#acf2f2;
+        }
+        .content_area{
+            background-color:#ffffff;
+        }
+        .footer{
+            background-color:#2c0802;
+        }
+        .logo {
+           
+            
+        }
+    </style>
+    
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700],
+          ['Lagos', 1200]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+
+<body>
+    <div class="container" style="box-shadow:0 0  5px   #888;top:300px">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	            <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="#">GlobePost</a>
+		            </div>
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			            <ul style="margin-left:20%" class="nav navbar-nav ">
+				            <li class="active"><a href="/ajax1">World News</a></li>
+				            <li><a href="/africa">Africa</a></li>
+				            <li><a href="/america">America</a></li>
+                            <li><a href="#">Asia</a></li>
+                            <li><a href="#">Austrialia</a></li>
+                            <li><a href="#">MiddleEast</a></li>
+                            <li><a href="europe">Europe</a></li>
+
+			            </ul>
+			            
+			            
+		            </div><!-- /.navbar-collapse -->
+	            </div><!-- /.container-fluid -->
+            </nav>
+        <div class="row header1" style="margin-top:0">
+
+
+
+
+            <div class="logo col-xs-12    col-md-12 ">
+                <img src="../static/image/logo2.png" height="100" width="200" />
+            </div>
+
+
+        </div>
+        <div class=" row">
+                        <div class="breakingnews col-xs-12 ">
+                            <h5><em><b>Breaking news:</b></em></h5>
+                        </div>
+            </div>
+        <div class="row" style="padding-top:0"  >
+            <div id="slide_wrap ">
+            <div class="col-xs-12 col-md-10" id="roll_it"  >
+                         
+                <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+                 <div><img src="../static/image/transparent_ph.png" /></div>
+<!-- 
+
+
+
+
+
+ <div><img src="../static/image/Penguins.jpg"  /></div>
+<div><img src="../static/image/Lighthouse.jpg" /></div>
+<div><img src="../static/image/Koala.jpg" /></div>
+<div><img src="../static/image/Jellyfish.jpg" />  </div>         
+<div><img src="../static/image/Hydrangeas.jpg" /></div>
+<div><img src="../static/image/Tulips.jpg" /></div>
+<div><img src="../static/image/Penguins.jpg" /></div>
+<div><img src="../static/image/Lighthouse.jpg" /></div>
+<div><img src="../static/image/Koala.jpg" /></div>
+<div><img src="../static/image/Jellyfish.jpg" />  </div>         
+<div><img src="../static/image/Hydrangeas.jpg" /></div>
+--> 
+
+
+            </div>
+            <div style="float:none; clear:both; "></div>
+</div>
+
+          
+        </div>
+      
+        <div class="row map_region" id="mymap"  >
+            <div class="col-md-12" style="padding-left:0;padding-right:0; border:none;height:650px;" id="regions_div">
+                 <img src="../static/image/map.png" style="width:100%; height:650px;" />
+
+
+            </div>
+        </div>
+  
+        <div id="contentarea" class="row content_area">
+            <div class="container">
+                <div class="row">
+                    <div id="story" class="col-md-12">
+
+                        <h5 style="font-weight:bold;">Stories >>></h5>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="sidebar" class="col-md-2 " style=" padding:0;  ">
+                        <ul class="list-group" style="padding:0; margin-bottom:0;">
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse1">
+                                <span id="world" class="badge">0</span>
+                                World
+                                 <div id="collapse1" class="collapse">                    
+                                 </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse2">
+                                <span id="afr" class="badge">0</span>
+                                Africa
+                                 <div id="collapse2" class="collapse">
+                       
+                                </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse3">
+                                <span id="eu" class="badge">0</span>
+                                Europe
+                                 <div id="collapse3" class="collapse">
+                       
+                                </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse4">
+                                <span id="me" class="badge">0</span>
+                                MiddleEast
+                                 <div id="collapse4" class="collapse">
+                       
+                                </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse5">
+                                <span id="asia" class="badge">0</span>
+                                Asia
+                                 <div id="collapse5" class="collapse">
+                       
+                                </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse6">
+                                <span id="us" class="badge">0</span>
+                                America
+                                 <div id="collapse6" class="collapse">
+                       
+                                </div>
+                            </li>
+                            <li class="list-group-item" data-toggle="collapse" data-target="#collapse7">
+                                <span id="aus" class="badge">0</span>
+                                Austrialia
+                                 <div id="collapse7" class="collapse">
+                       
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="listcont" class="col-md-10">
+                        <div id="listing" class="container">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            footer
+        </div>
+
+
+        </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
