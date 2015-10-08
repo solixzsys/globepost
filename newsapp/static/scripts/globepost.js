@@ -22,7 +22,7 @@ var postlocation = {
 function show_modal(title,summary) {
     $("#myModalLabel").html(title)
     $(".modal-body").html(summary)
-    console.log("inside call........ ", title, "---", summary);
+    //console.log("inside call........ ", title, "---", summary);
 }
 
 var limit = {
@@ -110,8 +110,8 @@ $(document).ready(function () {
                 pop_thumb();
 
 
-                console.log("Inside ajax...................")
-                console.log(data1)
+                //console.log("Inside ajax...................")
+                //console.log(data1)
                 populate(limit.beg, limit.end);
                 
                 chec_data(data);
@@ -190,7 +190,7 @@ $(document).ready(function () {
 
 
     function populate(beg, end) {
-        console.log("Inside Populate...................",data)
+        //console.log("Inside Populate...................",data)
         //console.log("befor loop ", beg, end);
         for (var i = beg; i < end; i++) {
 
@@ -204,7 +204,7 @@ $(document).ready(function () {
 
             var $ele = $("p #lnk" + i)
             $ele.on("click", { "title": t, "summary": data[i].fields.content }, function (e) {
-                console.log(e.data.title)
+                //console.log(e.data.title)
                 show_modal(e.data.title, e.data.summary)
             });
             //$("#"+i).on("click", "p #lnk" + i, function () {
@@ -281,7 +281,7 @@ $(document).ready(function () {
     //***********************************THis section deal with the population of sliding thumbnails
 
     var pop_thumb = function () {
-        var w = 0; var divs = "";
+        var w = 0; var imgs = "";
         var mydata = [];
       var thumbimg = $("#roll_it");
 
@@ -295,24 +295,39 @@ $(document).ready(function () {
             }
         }
         //console.log("mydata................................................",mydata)
-        for (var j = 0; j < 15; j++) {
-            divs += '<div '+"id=tb" +j+'  ><img src=' + mydata[j].fields.thumbnail + ' /></div>';
-            $(" div").on("click", "#tb0 img", function () {
-                 alert("ssssssssssss");
-                 $("#tb0 img").on("click");
+        //for (var j = 0; j < 15; j++) {
+        //    divs += '<div '+"id=tb" +j+'  ><img src=' + mydata[j].fields.thumbnail + ' /></div>';
+        //    $(" div").on("click", "#tb0 img", function () {
+        //         alert("ssssssssssss");
+        //         $("#tb0 img").on("click");
 
-            });
+        //    });
 
 
              
-           // $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
+        //   // $('<a href="#">' + mydata[j].fields.title + "</a>").insertAfter(thumbimg[j]);
 
 
 
-            //console.log("^^^^^^^^^", divs)
-        }
+        //    //console.log("^^^^^^^^^", divs)
+        //}
         
-        $("#roll_it").html(divs);
+        //$("#roll_it").html(divs);
+
+
+        for (var j = 0; j < 15; j++) {
+            imgs += '<img src=' + mydata[j].fields.thumbnail + ' />';
+           
+
+
+             
+           
+        }
+        $("#slider2").html(imgs);
+        $("#slider2").cycle({
+            fx:"carousel",
+            timeout:1000
+        });
         //********************************Sliding of thumbnails ends here**************************
        
        
@@ -388,7 +403,7 @@ $(document).ready(function () {
 
 
     function print_local(loc_data) {
-        console.log("@@@@@@@@@@@ "+loc_data+afrpost)     
+        //console.log("@@@@@@@@@@@ "+loc_data+afrpost)     
     }
     
 });
