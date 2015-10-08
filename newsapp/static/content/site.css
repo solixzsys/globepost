@@ -79,7 +79,17 @@ input[type="checkbox"].input-validation-error {
     z-index:99;
 }
 
-#breakingnews{
+#slider2 img{
+    width:200px;
+    height:180px;
+    margin:10px;
+    border-radius:3px;
+    border:1px  groove;
+
     
+}
+#slider2{
     
+    margin-left:50px;
+    margin-right:50px;
 }

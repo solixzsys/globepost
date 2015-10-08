@@ -31,20 +31,20 @@ var limit = {
 };
 $(document).ready(function () {
 
-    $("#roll_it").carouFredSel({
+    //$("#roll_it").carouFredSel({
 
-        //items: 5,
-        width: '100%',
-        height: 'auto',
-        items: 5,
-        responsive: true,
-        scroll: {
-            items: 3,
-            easing: "linear",
-            duration: 1000,
-            pauseOnHover: true
-        }
-    });
+    //    //items: 5,
+    //    width: '100%',
+    //    height: 'auto',
+    //    items: 5,
+    //    responsive: true,
+    //    scroll: {
+    //        items: 3,
+    //        easing: "linear",
+    //        duration: 1000,
+    //        pauseOnHover: true
+    //    }
+    //});
 
 
 
