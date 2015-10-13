@@ -316,21 +316,56 @@ $(document).ready(function () {
 
 
         for (var j = 0; j < 15; j++) {
-            imgs += '<img src=' + mydata[j].fields.thumbnail + ' />';
+            imgs += '<li ><img src=' + mydata[j].fields.thumbnail + '>' +
+                '<p>' +
+        mydata[j].fields.title +
+    '</p>'+
+                
+                
+                
+                '<li>';
            
-
+            $("#slider").html(imgs);
 
              
            
         }
-        $("#slider2").html(imgs);
-        $("#slider2").cycle({
-            fx:"carousel",
-            timeout:1000
+        var direction = [{ "left": "-=260px" }, { "right": "+=260px" }];
+
+        $("#prev").click(function () {
+            $("#slider").stop().animate({
+                left: direction[0].left
+            }, 1200);
+
         });
-        //********************************Sliding of thumbnails ends here**************************
-       
-       
+        $("#next").click(function () {
+            $("#slider").stop().animate({
+                left: direction[1].right
+            }, 1200);
+
+        });
+
+        var anim = function () {
+            $("#slider").animate({
+                left: direction[0].left
+            }, 1200);
+            console.log("slider left: " + $("#slider").position().left)
+            var c = parseInt($("#slider li:last").position().left) + parseInt($("#slider").position().left)
+            console.log("slider last child left: " + c)
+            if (c <= 1600) {
+                $("#slider").append($("#slider").children().clone().slice(0, 6));
+
+            }
+
+        };
+
+
+        var timer = setInterval(anim, 3600);
+        $("#slider li").hover(function () {
+            clearInterval(timer)
+        }, function () {
+            timer = setInterval(anim, 3600);
+        })
 
 
 
