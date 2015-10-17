@@ -212,7 +212,7 @@ $(document).ready(function () {
             //    show_modal(data[i-2].fields.title, data[i-2].fields.summary);
             //});
             if (data[i].fields.site.search("Reuters")==-1){
-                $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' height="100" width="150" />')
+                $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' max-height="100" max-width="150" />')
             } else {
                 $("#" + i + " .thumbnail").removeClass("thumbnail")
             }
@@ -349,9 +349,9 @@ $(document).ready(function () {
             $("#slider").animate({
                 left: direction[0].left
             }, 1200);
-            console.log("slider left: " + $("#slider").position().left)
+            //console.log("slider left: " + $("#slider").position().left)
             var c = parseInt($("#slider li:last").position().left) + parseInt($("#slider").position().left)
-            console.log("slider last child left: " + c)
+            //console.log("slider last child left: " + c)
             if (c <= 1600) {
                 $("#slider").append($("#slider").children().clone().slice(0, 6));
 

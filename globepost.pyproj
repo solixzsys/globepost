@@ -95,6 +95,9 @@
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.mousewheel.min.js" />
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.touchSwipe.min.js" />
     <Content Include="newsapp\static\carouFredSel-master\carouFredSel-master\helper-plugins\jquery.transit.min.js" />
+    <Content Include="newsapp\static\image\2015.jpg" />
+    <Content Include="newsapp\static\image\5fe44.jpg" />
+    <Content Include="newsapp\static\image\MikeAdams_SM.jpg" />
     <Content Include="newsapp\static\image\transparent_ph.png" />
     <Content Include="newsapp\static\scripts\jquery.cycle2.carousel.min.js" />
     <Content Include="newsapp\static\scripts\jquery.cycle2.js" />

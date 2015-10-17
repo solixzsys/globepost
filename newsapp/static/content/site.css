@@ -75,17 +75,21 @@ input[type="checkbox"].input-validation-error {
 }
 
  #slider li img{
-            width:200px;
-            height:180px;
-            
+           width:200px;
+            height:100px;
+            /*float:right;*/
 
         }
-         #slider li{
-             float:left;
-             list-style:none;
-             margin:10px;
-
-         }
+#slider li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    max-width: 200px;
+    overflow: hidden;
+    /*background-color: brown;*/
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
          #slider{
              width:9999999px;
              position:relative;
@@ -106,17 +110,18 @@ input[type="checkbox"].input-validation-error {
              cursor:pointer;
          }
          #next{
-            position:absolute;
-            left:95%;
+           
+             position:relative;
+           margin-top:50px;
+         }
+         #prev{
+           position:relative;
+           margin-top:50px;
+           //margin-left:10px;
+            
              
          }
          #controls{
              position:relative;
              margin: auto 10%;
-         }
-         #slider p{
-             width:200px;
-             margin:0 10px;
-             text-align:center;
-             padding-right:20px;
          }
