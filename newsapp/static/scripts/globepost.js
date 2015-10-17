@@ -212,7 +212,7 @@ $(document).ready(function () {
             //    show_modal(data[i-2].fields.title, data[i-2].fields.summary);
             //});
             if (data[i].fields.site.search("Reuters")==-1){
-                $("#" + i + " .mythumbnail").html('<img src=' + data[i].fields.thumbnail+' />')
+                $("#" + i + " .mythumbnail").html('<img src=' + data[i].fields.thumbnail + '/>')
             } else {
                 $("#" + i + " .mythumbnail").removeClass("mythumbnail")
             }

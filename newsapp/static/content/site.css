@@ -131,3 +131,7 @@ input[type="checkbox"].input-validation-error {
     padding: 2px;
     
 }
+.mythumbnail img{
+    max-height:100px;
+    max-width:150px;
+}
