@@ -125,3 +125,9 @@ input[type="checkbox"].input-validation-error {
              position:relative;
              margin: auto 10%;
          }
+.mythumbnail {
+    border: 2px groove;
+    border-radius: 4px;
+    padding: 2px;
+    
+}

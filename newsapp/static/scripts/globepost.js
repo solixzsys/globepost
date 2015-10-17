@@ -177,7 +177,7 @@ $(document).ready(function () {
 
     var str1 = '<div  class="row" style="margin-bottom:10px">' +
 
-                            '<div class="col-sm-2 thumbnail">' +
+                            '<div class="col-sm-2 mythumbnail">' +
 
                                 //'<img src="../static/image/Koala.jpg" height="100" width="150" />'+
 
@@ -212,9 +212,9 @@ $(document).ready(function () {
             //    show_modal(data[i-2].fields.title, data[i-2].fields.summary);
             //});
             if (data[i].fields.site.search("Reuters")==-1){
-                $("#" + i + " .thumbnail").html('<img src=' + data[i].fields.thumbnail + ' max-height="100" max-width="150" />')
+                $("#" + i + " .mythumbnail").html('<img src=' + data[i].fields.thumbnail+' />')
             } else {
-                $("#" + i + " .thumbnail").removeClass("thumbnail")
+                $("#" + i + " .mythumbnail").removeClass("mythumbnail")
             }
 
             
